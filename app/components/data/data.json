@@ -1,0 +1,557 @@
+{
+   "products": [
+      {
+         "id": 1,
+         "image": "/product.png",
+         "quantity": "500ml Bottle",
+         "name": "Hygrix IPA Spray",
+         "category": "Sanitizers",
+         "shortDescription": "Professional-grade isopropyl alcohol spray for surface disinfection.",
+         "description": "Hygrix IPA Spray is a professional-grade isopropyl alcohol solution designed for effective surface disinfection. This fast-drying formula eliminates 99.9% of germs and bacteria on contact, making it ideal for healthcare settings, offices, and home use. The convenient spray bottle ensures even coverage and easy application on various surfaces.",
+         "features": [
+            "99.9% germ elimination",
+            "Fast-drying formula",
+            "Safe for most surfaces",
+            "Healthcare-grade quality",
+            "Convenient spray application"
+         ],
+         "specifications": {
+            "Volume": "500ml",
+            "Active Ingredient": "70% Isopropyl Alcohol",
+            "Application": "Spray directly on surface",
+            "Shelf Life": "24 months"
+         }
+      },
+      {
+         "id": 2,
+         "image": "/product.png",
+         "quantity": "250ml Bottle",
+         "name": "Hygrix Hand Sanitizer Gel",
+         "category": "Sanitizers",
+         "shortDescription": "Moisturizing hand sanitizer gel with aloe vera extract.",
+         "description": "Hygrix Hand Sanitizer Gel combines powerful germ-fighting action with skin-nourishing ingredients. Enriched with aloe vera and vitamin E, this sanitizer keeps your hands clean without causing dryness. Perfect for frequent use throughout the day.",
+         "features": [
+            "Kills 99.9% of germs",
+            "Enriched with aloe vera",
+            "Non-sticky formula",
+            "Moisturizing properties",
+            "Pleasant fragrance"
+         ],
+         "specifications": {
+            "Volume": "250ml",
+            "Active Ingredient": "62% Ethyl Alcohol",
+            "Skin Type": "All skin types",
+            "Shelf Life": "36 months"
+         }
+      },
+      {
+         "id": 3,
+         "image": "/product.png",
+         "quantity": "100 Wipes Pack",
+         "name": "Hygrix Disinfectant Wipes",
+         "category": "Wipes",
+         "shortDescription": "Multi-surface disinfectant wipes for quick sanitization.",
+         "description": "Hygrix Disinfectant Wipes provide convenient, on-the-go cleaning for multiple surfaces. These pre-moistened wipes effectively remove dirt, grime, and germs from desks, phones, door handles, and more. The durable, textured material ensures thorough cleaning without tearing.",
+         "features": [
+            "Multi-surface compatible",
+            "Pre-moistened convenience",
+            "Textured for better cleaning",
+            "Resealable packaging",
+            "Biodegradable material"
+         ],
+         "specifications": {
+            "Count": "100 wipes",
+            "Size": "7 x 8 inches",
+            "Material": "Non-woven fabric",
+            "Shelf Life": "18 months"
+         }
+      },
+      {
+         "id": 4,
+         "image": "/product.png",
+         "quantity": "1 Liter Bottle",
+         "name": "Hygrix Surface Cleaner",
+         "category": "Cleaners",
+         "shortDescription": "All-purpose surface cleaner with antibacterial action.",
+         "description": "Hygrix Surface Cleaner is an all-purpose cleaning solution that combines powerful cleaning action with antibacterial properties. Suitable for kitchens, bathrooms, and general household surfaces, it leaves surfaces sparkling clean with a fresh scent.",
+         "features": [
+            "All-purpose formula",
+            "Antibacterial action",
+            "Fresh citrus scent",
+            "Streak-free finish",
+            "Safe for food-contact surfaces"
+         ],
+         "specifications": {
+            "Volume": "1 Liter",
+            "pH Level": "Neutral",
+            "Dilution": "Ready to use",
+            "Shelf Life": "24 months"
+         }
+      },
+      {
+         "id": 5,
+         "image": "/product.png",
+         "quantity": "Box of 50",
+         "name": "Hygrix 3-Ply Face Masks",
+         "category": "Personal Protection",
+         "shortDescription": "Premium quality 3-ply disposable face masks.",
+         "description": "Hygrix 3-Ply Face Masks offer reliable respiratory protection with comfort. Each mask features three layers of filtration, adjustable nose bridge, and soft ear loops for all-day wear. Ideal for medical, industrial, and everyday use.",
+         "features": [
+            "3-layer filtration",
+            "Adjustable nose bridge",
+            "Soft elastic ear loops",
+            "Breathable material",
+            "Latex-free"
+         ],
+         "specifications": {
+            "Quantity": "50 masks per box",
+            "Filtration": "BFE ≥ 95%",
+            "Size": "17.5 x 9.5 cm",
+            "Material": "Non-woven polypropylene"
+         }
+      },
+      {
+         "id": 6,
+         "image": "/product.png",
+         "quantity": "50ml Spray",
+         "name": "Hygrix Pocket Sanitizer",
+         "category": "Sanitizers",
+         "shortDescription": "Compact travel-size sanitizer for on-the-go protection.",
+         "description": "Hygrix Pocket Sanitizer is the perfect travel companion for maintaining hand hygiene wherever you go. This compact spray fits easily in pockets, purses, or bags, providing instant protection when soap and water aren't available.",
+         "features": [
+            "Travel-friendly size",
+            "Quick-dry spray formula",
+            "Light refreshing scent",
+            "Clip-on cap option",
+            "TSA approved size"
+         ],
+         "specifications": {
+            "Volume": "50ml",
+            "Active Ingredient": "70% Ethyl Alcohol",
+            "Format": "Spray",
+            "Shelf Life": "24 months"
+         }
+      },
+      {
+         "id": 7,
+         "image": "/product.png",
+         "quantity": "Pair",
+         "name": "Hygrix Nitrile Gloves",
+         "category": "Personal Protection",
+         "shortDescription": "Powder-free nitrile examination gloves for medical use.",
+         "description": "Hygrix Nitrile Gloves provide superior protection and dexterity for medical and industrial applications. Made from high-quality nitrile, these gloves offer excellent chemical resistance and are ideal for those with latex allergies.",
+         "features": [
+            "Powder-free design",
+            "Latex-free material",
+            "Textured fingertips",
+            "Ambidextrous fit",
+            "High tensile strength"
+         ],
+         "specifications": {
+            "Material": "Nitrile",
+            "Sizes Available": "S, M, L, XL",
+            "Thickness": "4 mil",
+            "Quantity": "100 gloves per box"
+         }
+      },
+      {
+         "id": 8,
+         "image": "/product.png",
+         "quantity": "5 Liter Canister",
+         "name": "Hygrix Floor Disinfectant",
+         "category": "Cleaners",
+         "shortDescription": "Industrial-strength floor disinfectant for large areas.",
+         "description": "Hygrix Floor Disinfectant is formulated for industrial and commercial floor cleaning. This concentrated solution effectively sanitizes large floor areas while leaving a pleasant, long-lasting fragrance. Suitable for hospitals, schools, and commercial spaces.",
+         "features": [
+            "Concentrated formula",
+            "Hospital-grade disinfection",
+            "Pleasant pine fragrance",
+            "Safe for all floor types",
+            "Economical large size"
+         ],
+         "specifications": {
+            "Volume": "5 Liters",
+            "Dilution Ratio": "1:100",
+            "Coverage": "Up to 500 sq meters",
+            "Shelf Life": "36 months"
+         }
+      },
+      {
+         "id": 9,
+         "image": "/product.png",
+         "quantity": "30 Wipes Pack",
+         "name": "Hygrix Baby Wipes",
+         "category": "Wipes",
+         "shortDescription": "Gentle, hypoallergenic wipes for sensitive baby skin.",
+         "description": "Hygrix Baby Wipes are specially formulated for delicate baby skin. These ultra-soft, hypoallergenic wipes are free from alcohol, parabens, and harsh chemicals, making them perfect for diaper changes and gentle face cleaning.",
+         "features": [
+            "Hypoallergenic formula",
+            "Alcohol and paraben-free",
+            "Ultra-soft texture",
+            "Dermatologically tested",
+            "Resealable flip-top lid"
+         ],
+         "specifications": {
+            "Count": "30 wipes",
+            "Size": "6 x 7 inches",
+            "Material": "Cotton blend",
+            "pH": "Skin-neutral"
+         }
+      },
+      {
+         "id": 10,
+         "image": "/product.png",
+         "quantity": "Auto Dispenser",
+         "name": "Hygrix Touchless Dispenser",
+         "category": "Dispensers",
+         "shortDescription": "Automatic touchless sanitizer dispenser for hygiene stations.",
+         "description": "Hygrix Touchless Dispenser uses infrared sensor technology to dispense sanitizer without physical contact. Perfect for high-traffic areas, this sleek dispenser helps maintain hygiene while adding a modern touch to any environment.",
+         "features": [
+            "Infrared sensor technology",
+            "Adjustable dispense volume",
+            "Battery or USB powered",
+            "1000ml capacity tank",
+            "Low liquid indicator"
+         ],
+         "specifications": {
+            "Capacity": "1000ml",
+            "Power": "4x AA batteries or USB",
+            "Sensor Range": "0-6 cm",
+            "Material": "ABS Plastic"
+         }
+      },
+      {
+         "id": 11,
+         "image": "/product.png",
+         "quantity": "200ml Foam",
+         "name": "Hygrix Foaming Hand Wash",
+         "category": "Sanitizers",
+         "shortDescription": "Rich foaming hand wash with antibacterial properties.",
+         "description": "Hygrix Foaming Hand Wash creates a luxurious lather that effectively cleanses hands while being gentle on skin. The antibacterial formula removes germs while the moisturizing agents prevent dryness from frequent washing.",
+         "features": [
+            "Rich foaming action",
+            "Antibacterial formula",
+            "Moisturizing ingredients",
+            "Gentle on skin",
+            "Economical pump dispenser"
+         ],
+         "specifications": {
+            "Volume": "200ml",
+            "Format": "Foaming",
+            "Scent": "Fresh lavender",
+            "Shelf Life": "30 months"
+         }
+      },
+      {
+         "id": 12,
+         "image": "/product.png",
+         "quantity": "Kit",
+         "name": "Hygrix First Aid Kit",
+         "category": "Medical Supplies",
+         "shortDescription": "Comprehensive first aid kit for home and office use.",
+         "description": "Hygrix First Aid Kit contains all essential medical supplies for treating minor injuries and emergencies. This compact, organized kit includes bandages, antiseptic wipes, gauze, scissors, and more, making it ideal for homes, offices, and vehicles.",
+         "features": [
+            "100+ essential items",
+            "Organized compartments",
+            "Compact carrying case",
+            "Comprehensive guide included",
+            "Meets safety standards"
+         ],
+         "specifications": {
+            "Items": "108 pieces",
+            "Case Size": "25 x 18 x 8 cm",
+            "Material": "Durable EVA case",
+            "Suitable For": "Home, office, travel"
+         }
+      }
+   ],
+   "categories": [
+      "All Products",
+      "Sanitizers",
+      "Wipes",
+      "Cleaners",
+      "Personal Protection",
+      "Dispensers",
+      "Medical Supplies"
+   ],
+   "reviews": [
+      {
+         "id": 6,
+         "description": "Lore refers to the body of traditional knowledge, stories, and beliefs passed down within a culture or group, often orally, covering subjects like folklore, history, or a fictional universe's backstory.",
+         "image": "/user.png",
+         "name": "carolyn dover",
+         "post": "Designer"
+      },
+      {
+         "id": 7,
+         "description": "Lore refers to the body of traditional knowledge, stories, and beliefs passed down within a culture or group, often orally, covering subjects like folklore, history, or a fictional universe's backstory.",
+         "image": "/user.png",
+         "name": "john smith",
+         "post": "Developer"
+      },
+      {
+         "id": 8,
+         "description": "Lore refers to the body of traditional knowledge, stories, and beliefs passed down within a culture or group, often orally, covering subjects like folklore, history, or a fictional universe's backstory.",
+         "image": "/user.png",
+         "name": "sara wilson",
+         "post": "Manager"
+      },{
+         "id": 1,
+         "description": "Lore refers to the body of traditional knowledge, stories, and beliefs passed down within a culture or group, often orally, covering subjects like folklore, history, or a fictional universe's backstory.",
+         "image": "/user.png",
+         "name": "sara wilson",
+         "post": "Manager"
+      },{
+         "id": 2,
+         "description": "Lore refers to the body of traditional knowledge, stories, and beliefs passed down within a culture or group, often orally, covering subjects like folklore, history, or a fictional universe's backstory.",
+         "image": "/user.png",
+         "name": "sara wilson",
+         "post": "Manager"
+      },{
+         "id": 3,
+         "description": "Lore refers to the body of traditional knowledge, stories, and beliefs passed down within a culture or group, often orally, covering subjects like folklore, history, or a fictional universe's backstory.",
+         "image": "/user.png",
+         "name": "sara wilson",
+         "post": "Manager"
+      },
+      {
+         "id": 4,
+         "description": "Lore refers to the body of traditional knowledge, stories, and beliefs passed down within a culture or group, often orally, covering subjects like folklore, history, or a fictional universe's backstory.",
+         "image": "/user.png",
+         "name": "sara wilson",
+         "post": "Manager"
+      }
+      
+      
+      
+   ],
+   "healthpriorities": [
+      {
+         "id": 9,
+         "image": "/checkups.png",
+         "title": "General Check-up",
+         "description": "We remove the stress and guesswork from healthcare."
+      },
+      {
+         "id": 10,
+         "image": "/checkups.png",
+         "title": "Online Consultation",
+         "description": "Connect with experienced healthcare professionals from the comfort of your home."
+      },
+      {
+         "id": 11,
+         "image": "/checkups.png",
+         "title": "Medicines Delivery",
+         "description": "Get your prescribed medications delivered to your doorstep quickly and safely."
+      },
+      {
+         "id": 12,
+         "image": "/checkups.png",
+         "title": "Diagnostics & Lab Tests",
+         "description": "Convenient and accurate diagnostic services at your fingertips."
+      }
+   ],
+   "reasons": [
+      {
+         "id": 13,
+         "text": " Our team consists of board-certified doctors and specialists,",
+         "point": "Experienced Professionals"
+      },
+      {
+         "id": 14,
+         "text": " We offer a wide range of medical services, from primary care to specialized treatments.",
+         "point": "Comprehensive Services"
+      },
+      {
+         "id": 15,
+         "text": " We prioritize your comfort, preferences, and overall well-being in every aspect of our care.",
+         "point": "Patient-Centered Care"
+      },
+      {
+         "id": 16,
+         "text": " We utilize the latest medical technology and evidence-based practices to ensure accurate diagnoses and effective treatments.",
+         "point": "Advanced Technology"
+      },
+      {
+         "id": 17,
+         "text": " With multiple locations and flexible scheduling options, we make it easy for you to receive the care you need.",
+         "point": "Convenient Access"
+      }
+   ],
+   "success": [
+      {
+         "id": 18,
+         "avg": "95%",
+         "description": "We remove the stress and guesswork from healthcare so you always feel informed supported"
+      },
+      {
+         "id": 19,
+         "avg": "150K+",
+         "description": "Successful Treatments"
+      },
+      {
+         "id": 20,
+         "avg": "20+",
+         "description": "Years of Experience"
+      }
+   ],
+   "address": [
+      {
+         "id": 21,
+         "image": "/call.png",
+         "name": "Phone",
+         "des": "We remove the stress and guesswork from healthcare.",
+         "contact": "+4321 567 879 098"
+      },
+      {
+         "id": 22,
+         "image": "/sms.png",
+         "name": "Email Address",
+         "des": "We remove the stress and guesswork from healthcare.",
+         "contact": "hello@hygrixsupport.com"
+      },
+      {
+         "id": 23,
+         "image": "/location.png",
+         "name": "Location",
+         "des": "We remove the stress and guesswork from healthcare.",
+         "contact": "KIZAD KHIA 8-18 PO. Box 133685,  UAE"
+      }
+   ],
+   "blogCategories": [
+      "All",
+      "Health Tips",
+      "Product Updates",
+      "Industry News",
+      "Tutorials",
+      "Wellness"
+   ],
+   "blogs": [
+      {
+         "id": 1,
+         "slug": "importance-of-hand-hygiene",
+         "title": "The Importance of Hand Hygiene in Daily Life",
+         "excerpt": "Discover why proper hand hygiene is your first line of defense against infections and how to maintain it effectively throughout the day.",
+         "content": "Hand hygiene is one of the most important steps we can take to avoid getting sick and spreading germs to others. Many diseases and conditions are spread by not washing hands with soap and clean water.\n\n## Why Hand Hygiene Matters\n\nOur hands come into contact with countless surfaces throughout the day. From doorknobs to smartphones, each touch can transfer potentially harmful microorganisms. According to the CDC, proper hand hygiene can reduce respiratory illnesses by 16-21% and diarrheal diseases by 23-40%.\n\n## When to Wash Your Hands\n\n- Before, during, and after preparing food\n- Before and after eating\n- After using the toilet\n- After blowing your nose, coughing, or sneezing\n- After touching garbage\n- Before and after treating a cut or wound\n\n## The Proper Technique\n\n1. Wet your hands with clean, running water\n2. Apply soap and lather well\n3. Scrub all surfaces for at least 20 seconds\n4. Rinse thoroughly under running water\n5. Dry with a clean towel or air dry\n\n## When Soap Isn't Available\n\nHand sanitizers with at least 60% alcohol content can be effective alternatives when soap and water aren't accessible. Hygrix Hand Sanitizer provides hospital-grade protection while keeping your skin moisturized.",
+         "image": "/blog1.jpg",
+         "category": "Health Tips",
+         "author": "Dr. Sarah Mitchell",
+         "authorImage": "/user.png",
+         "date": "2026-01-15",
+         "readTime": "5 min read",
+         "featured": true
+      },
+      {
+         "id": 2,
+         "slug": "new-product-launch-hygrix-pro",
+         "title": "Introducing Hygrix Pro: Next-Gen Sanitization",
+         "excerpt": "We're excited to announce our latest innovation in hygiene technology – the Hygrix Pro series with enhanced formula.",
+         "content": "Today marks a significant milestone for Hygrix as we unveil our most advanced sanitization products yet – the Hygrix Pro series.\n\n## What's New in Hygrix Pro\n\nAfter two years of research and development, we've created a formula that offers:\n\n- **99.99% Germ Elimination**: Our enhanced formula now targets an even broader spectrum of pathogens\n- **Extended Protection**: Up to 4 hours of continuous protection after application\n- **Skin-Friendly Formula**: New moisturizing complex with vitamin E and aloe vera\n- **Eco-Conscious Packaging**: 100% recyclable containers\n\n## The Science Behind It\n\nOur research team worked with leading microbiologists to develop a unique quaternary ammonium compound that provides superior antimicrobial activity while remaining gentle on skin.\n\n## Availability\n\nHygrix Pro will be available starting February 1st, 2026, at all major retailers and through our online store. Early adopters can sign up for our newsletter to receive exclusive launch discounts.",
+         "image": "/blog2.jpg",
+         "category": "Product Updates",
+         "author": "Hygrix Team",
+         "authorImage": "/user.png",
+         "date": "2026-01-12",
+         "readTime": "4 min read",
+         "featured": true
+      },
+      {
+         "id": 3,
+         "slug": "healthcare-industry-trends-2026",
+         "title": "Healthcare Industry Trends to Watch in 2026",
+         "excerpt": "From AI diagnostics to personalized hygiene solutions, explore the key trends shaping the healthcare industry this year.",
+         "content": "The healthcare industry continues to evolve at an unprecedented pace. Here are the trends that will define 2026.\n\n## 1. AI-Powered Health Monitoring\n\nArtificial intelligence is revolutionizing how we monitor and maintain health. Smart devices can now predict potential health issues before they become serious.\n\n## 2. Personalized Hygiene Solutions\n\nOne-size-fits-all is becoming obsolete. Companies like Hygrix are developing personalized hygiene products based on individual skin types, environments, and lifestyle factors.\n\n## 3. Sustainable Healthcare Products\n\nEnvironmental consciousness is driving innovation. Biodegradable packaging, refillable containers, and eco-friendly formulations are becoming standard.\n\n## 4. Telemedicine Integration\n\nRemote healthcare consultations have become mainstream, with integrated platforms offering everything from diagnosis to prescription delivery.\n\n## 5. Preventive Care Focus\n\nThe industry is shifting from treatment to prevention, with emphasis on hygiene products that prevent infection rather than treating it.\n\n## What This Means for You\n\nStaying informed about these trends helps you make better decisions about your health and hygiene routines.",
+         "image": "/blog3.jpg",
+         "category": "Industry News",
+         "author": "James Chen",
+         "authorImage": "/user.png",
+         "date": "2026-01-10",
+         "readTime": "6 min read",
+         "featured": false
+      },
+      {
+         "id": 4,
+         "slug": "how-to-create-hygiene-station",
+         "title": "How to Create an Effective Hygiene Station at Home",
+         "excerpt": "A step-by-step guide to setting up professional-grade hygiene stations in your home for maximum protection.",
+         "content": "Creating dedicated hygiene stations in your home is an effective way to maintain cleanliness and prevent the spread of germs.\n\n## Step 1: Choose Strategic Locations\n\nPlace hygiene stations at key entry points:\n- Main entrance/mudroom\n- Kitchen entrance\n- Bathroom areas\n- Home office space\n\n## Step 2: Essential Supplies\n\nEach station should include:\n- Hand sanitizer (like Hygrix IPA Spray)\n- Disinfectant wipes\n- Face masks\n- Tissues\n- Small waste bin\n\n## Step 3: Proper Setup\n\n1. Use a small table or wall-mounted shelf\n2. Ensure all items are easily accessible\n3. Add clear labels if needed\n4. Include a small mirror for mask adjustment\n\n## Step 4: Maintenance\n\n- Check supplies weekly\n- Clean the station surface daily\n- Replace expired products immediately\n- Keep backup supplies stored nearby\n\n## Pro Tips\n\n- Use touchless dispensers for sanitizer\n- Consider UV-C sanitizing devices for phones\n- Add pleasant-scented products to encourage use\n\nA well-maintained hygiene station can significantly reduce the risk of infections spreading within your household.",
+         "image": "/blog4.jpg",
+         "category": "Tutorials",
+         "author": "Maria Santos",
+         "authorImage": "/user.png",
+         "date": "2026-01-08",
+         "readTime": "7 min read",
+         "featured": false
+      },
+      {
+         "id": 5,
+         "slug": "mental-health-physical-hygiene-connection",
+         "title": "The Connection Between Mental Health and Physical Hygiene",
+         "excerpt": "Research shows a strong link between maintaining good hygiene habits and improved mental well-being. Learn how they're connected.",
+         "content": "The relationship between mental health and physical hygiene is more profound than many realize. Recent studies have shown that maintaining good hygiene practices can significantly impact our psychological well-being.\n\n## The Science Behind It\n\nWhen we engage in hygiene routines, our brain releases small amounts of dopamine – the 'feel-good' neurotransmitter. This creates a positive feedback loop that encourages healthy habits.\n\n## How Hygiene Affects Mental Health\n\n### Self-Esteem and Confidence\nFeeling clean and fresh boosts self-confidence, which positively affects social interactions and overall mood.\n\n### Stress Reduction\nRoutine hygiene practices can serve as mindful moments in our day, reducing stress and anxiety.\n\n### Sleep Quality\nEvening hygiene routines signal to our brain that it's time to wind down, improving sleep quality.\n\n## Building Healthy Habits\n\n1. **Create a routine**: Consistency is key for both mental and physical health\n2. **Make it enjoyable**: Use products with scents you love\n3. **Practice mindfulness**: Be present during your hygiene routine\n4. **Celebrate small wins**: Acknowledge your consistency\n\n## When to Seek Help\n\nIf you notice significant changes in your hygiene habits or find it difficult to maintain basic routines, it may be worth speaking with a healthcare professional.",
+         "image": "/blog5.jpg",
+         "category": "Wellness",
+         "author": "Dr. Emily Watson",
+         "authorImage": "/user.png",
+         "date": "2026-01-05",
+         "readTime": "8 min read",
+         "featured": true
+      },
+      {
+         "id": 6,
+         "slug": "workplace-hygiene-best-practices",
+         "title": "Best Practices for Workplace Hygiene in 2026",
+         "excerpt": "Keep your workplace safe and healthy with these updated hygiene protocols and practical implementation tips.",
+         "content": "Maintaining a hygienic workplace is crucial for employee health and productivity. Here are the best practices for 2026.\n\n## Updated Guidelines\n\n### High-Touch Surface Cleaning\nClean these surfaces at least twice daily:\n- Door handles\n- Light switches\n- Elevator buttons\n- Shared equipment\n- Break room appliances\n\n### Air Quality Management\n- Upgrade HVAC filters to HEPA grade\n- Ensure proper ventilation\n- Consider air purifiers for enclosed spaces\n\n## Employee Hygiene Stations\n\nStrategically place sanitization stations throughout the office:\n- Building entrances\n- Conference rooms\n- Break rooms\n- Near elevators\n\n## Communication is Key\n\n- Display hygiene reminder posters\n- Send regular health tips via email\n- Conduct quarterly hygiene training\n\n## Creating a Culture of Cleanliness\n\n1. Lead by example\n2. Provide quality hygiene products\n3. Make it easy and accessible\n4. Recognize and reward good practices\n\nImplementing these practices not only protects health but also demonstrates care for employee well-being.",
+         "image": "/blog6.jpg",
+         "category": "Health Tips",
+         "author": "Robert Kim",
+         "authorImage": "/user.png",
+         "date": "2026-01-03",
+         "readTime": "5 min read",
+         "featured": false
+      },
+      {
+         "id": 7,
+         "slug": "understanding-sanitizer-ingredients",
+         "title": "Understanding Sanitizer Ingredients: A Complete Guide",
+         "excerpt": "Learn what goes into your hand sanitizer and how to choose products with the most effective and skin-safe formulations.",
+         "content": "Not all hand sanitizers are created equal. Understanding the ingredients can help you make informed choices for your health.\n\n## Active Ingredients\n\n### Alcohol-Based Sanitizers\nThe CDC recommends sanitizers with at least 60% alcohol:\n\n- **Ethyl Alcohol (Ethanol)**: Most common, effective against most pathogens\n- **Isopropyl Alcohol (Isopropanol)**: Equally effective, slightly different feel\n- **Benzalkonium Chloride**: Alcohol-free alternative, less effective\n\n## Supporting Ingredients\n\n### Moisturizers\n- Glycerin\n- Aloe vera\n- Vitamin E\n\nThese prevent the drying effects of alcohol on skin.\n\n### Thickeners\n- Carbomer\n- Acrylates\n\nThese create the gel consistency.\n\n## What to Avoid\n\n- Methanol (toxic)\n- Triclosan (potentially harmful)\n- Excessive fragrances (can irritate sensitive skin)\n\n## Reading Labels\n\nLook for:\n1. Alcohol content (60-80% is ideal)\n2. Moisturizing agents\n3. FDA approval or compliance\n\n## The Hygrix Difference\n\nOur products use pharmaceutical-grade ethanol combined with natural moisturizers for maximum effectiveness without compromising skin health.",
+         "image": "/blog7.jpg",
+         "category": "Tutorials",
+         "author": "Dr. Sarah Mitchell",
+         "authorImage": "/user.png",
+         "date": "2025-12-28",
+         "readTime": "6 min read",
+         "featured": false
+      },
+      {
+         "id": 8,
+         "slug": "sustainability-in-hygiene-products",
+         "title": "Sustainability in Hygiene: Our Commitment to the Planet",
+         "excerpt": "Discover how Hygrix is leading the charge in eco-friendly hygiene solutions without compromising on effectiveness.",
+         "content": "At Hygrix, we believe that protecting health shouldn't come at the expense of our planet. Here's how we're making a difference.\n\n## Our Green Initiatives\n\n### Packaging Revolution\n- 100% recyclable bottles by 2026\n- Reduced plastic usage by 40%\n- Introduction of refill stations\n\n### Sustainable Sourcing\n- Plant-based alcohol sources\n- Ethically sourced natural ingredients\n- Local supplier partnerships\n\n### Manufacturing\n- Solar-powered production facilities\n- Zero-waste manufacturing goal\n- Water recycling systems\n\n## The Challenge\n\nBalancing effectiveness with sustainability isn't easy. Hygiene products need to work, period. We invest heavily in R&D to ensure our eco-friendly formulations match or exceed traditional options.\n\n## How You Can Help\n\n1. **Choose wisely**: Support brands with sustainability commitments\n2. **Refill, don't replace**: Use our refill program\n3. **Recycle properly**: Clean containers before recycling\n4. **Spread the word**: Encourage others to make eco-conscious choices\n\n## Looking Ahead\n\nBy 2028, we aim to be completely carbon-neutral. Join us on this journey toward a cleaner, greener future.",
+         "image": "/blog8.jpg",
+         "category": "Industry News",
+         "author": "Hygrix Team",
+         "authorImage": "/user.png",
+         "date": "2025-12-25",
+         "readTime": "5 min read",
+         "featured": false
+      },
+      {
+         "id": 9,
+         "slug": "kids-hygiene-habits",
+         "title": "Teaching Kids Healthy Hygiene Habits That Last",
+         "excerpt": "Fun and effective strategies to help children develop lifelong hygiene habits that protect their health.",
+         "content": "Building good hygiene habits in childhood sets the foundation for a lifetime of health. Here's how to make it fun and effective.\n\n## Making It Fun\n\n### The 20-Second Song\nTeach kids to wash hands while singing 'Happy Birthday' twice or their favorite short song.\n\n### Reward Charts\nCreate a colorful chart tracking hygiene habits with stickers for consistency.\n\n### Role Play\nUse toys to demonstrate proper hygiene practices.\n\n## Age-Appropriate Expectations\n\n### Toddlers (2-3 years)\n- Assisted hand washing\n- Learning to cover coughs\n\n### Preschoolers (4-5 years)\n- Independent hand washing (supervised)\n- Understanding why hygiene matters\n\n### School Age (6+)\n- Full independence\n- Peer influence awareness\n\n## Common Challenges\n\n**\"I don't want to!\"**\nMake it a game, not a chore. Use timers, music, or special soaps.\n\n**Rushing Through**\nUse visual timers or apps designed for kids.\n\n**Forgetting**\nPlace colorful reminders at eye level.\n\n## Products for Kids\n\nLook for:\n- Gentle, tear-free formulas\n- Fun packaging and scents\n- Easy-to-use dispensers\n\nRemember, children learn by example. Practice good hygiene yourself, and they'll follow!",
+         "image": "/blog9.jpg",
+         "category": "Wellness",
+         "author": "Maria Santos",
+         "authorImage": "/user.png",
+         "date": "2025-12-20",
+         "readTime": "7 min read",
+         "featured": false
+      }
+   ]
+}
