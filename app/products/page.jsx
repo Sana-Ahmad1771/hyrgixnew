@@ -2,8 +2,6 @@
 import { useState, useMemo, useEffect } from "react"
 import Link from "next/link"
 import { motion, AnimatePresence, LayoutGroup } from "motion/react"
-import Navbar from "../components/common/Navbar"
-import Footer from "../components/common/Footer"
 import ProductHero from "../components/products/ProductHero"
 import EnhancedFilterSidebar from "../components/products/EnhancedFilterSidebar"
 import EnhancedProductCard from "../components/products/EnhancedProductCard"
@@ -73,9 +71,7 @@ export default function ProductsPage() {
     }
 
     return (
-        <div className="min-h-screen bg-gradient-to-b from-[#FCF2E5]/50 to-white">
-            <Navbar />
-            
+        <div className="min-h-screen pt-28 bg-gradient-to-b from-[#FCF2E5]/50 to-white">
             <main className="pt-6 pb-20">
                 {/* Breadcrumb */}
                 <div className="mx-5 sm:mx-10 md:mx-20 lg:mx-32">
@@ -346,8 +342,6 @@ export default function ProductsPage() {
                     isOpen={isFilterOpen} 
                 />
             </main>
-
-            <Footer />
         </div>
     )
 }

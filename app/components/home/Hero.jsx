@@ -1,6 +1,5 @@
 "use client"
 import Image from "next/image"
-import Navbar from "../common/Navbar"
 import Link from "next/link"
 import { motion } from "motion/react"
 
@@ -27,8 +26,7 @@ const staggerContainer = {
 
 export default function Hero() {
     return (
-        <section className="bg-[#FCF2E580] min-h-screen relative overflow-hidden ">
-            <Navbar />
+        <section className="bg-[#FCF2E580] min-h-screen relative overflow-hidden pt-28 ">
             {/* Center Content */}
             <motion.div className="object-cover h-[86vh] flex items-center justify-center" style={{
                 backgroundImage: "url('/bg.png'), url('/bg2.png')",

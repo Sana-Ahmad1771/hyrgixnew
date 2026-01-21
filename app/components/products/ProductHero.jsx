@@ -9,7 +9,7 @@ export default function ProductHero({ totalProducts, categories }) {
     ]
 
     return (
-        <section className="relative overflow-hidden py-12 sm:py-16 lg:py-20">
+        <section className="relative overflow-hidden  py-12 sm:py-16 lg:py-20">
             {/* Background Elements */}
             <div className="absolute inset-0 pointer-events-none">
                 {/* Gradient Orbs */}

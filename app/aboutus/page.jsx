@@ -4,7 +4,6 @@ import HealthPriority from "../components/about/HealthPriority"
 import WhyChooseUs from "../components/about/WhyChooseUs"
 import Success from "../components/about/Success"
 import Banner from "../components/common/Banner"
-import Footer from "../components/common/Footer"
 export default function About() {
     return(
         <>
@@ -14,7 +13,6 @@ export default function About() {
             <WhyChooseUs />
             <Success />
             <Banner />
-            <Footer />
         </>
     )
 }

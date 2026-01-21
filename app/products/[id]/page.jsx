@@ -4,8 +4,6 @@ import { notFound } from "next/navigation"
 import Image from "next/image"
 import Link from "next/link"
 import { motion, AnimatePresence } from "motion/react"
-import Navbar from "../../components/common/Navbar"
-import Footer from "../../components/common/Footer"
 import EnhancedProductCard from "../../components/products/EnhancedProductCard"
 import data from "../../components/data/data.json"
 
@@ -95,9 +93,7 @@ export default function ProductDetailPage({ params }) {
     ]
 
     return (
-        <div className="min-h-screen bg-gradient-to-b from-[#FCF2E5]/50 to-white">
-            <Navbar />
-            
+        <div className="min-h-screen pt-28 bg-gradient-to-b from-[#FCF2E5]/50 to-white">
             <main className="pt-6 pb-20">
                 {/* Breadcrumb */}
                 <div className="mx-5 sm:mx-10 md:mx-20 lg:mx-32 mb-8">
@@ -509,8 +505,6 @@ export default function ProductDetailPage({ params }) {
                     </Link>
                 </div>
             </main>
-
-            <Footer />
         </div>
     )
 }

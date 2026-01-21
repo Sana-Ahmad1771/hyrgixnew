@@ -16,7 +16,7 @@ export default function Navbar() {
   ];
 
   return (
-    <nav className="relative">
+    <nav className="absolute top-0 left-0 w-full z-50">
       <section
         className={` bg-white shadow-[0_20px_41.1px_0_rgba(0,0,0,0.05)]  flex justify-between items-center  mx-5 md:mx-20 lg:mx-30  px-5 py-3 mt-10 z-50 relative transition-all duration-300 ${isOpen ? 'rounded-t-4xl rounded-b-none' : 'rounded-4xl'}`}>
 

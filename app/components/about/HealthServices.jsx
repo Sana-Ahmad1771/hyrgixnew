@@ -1,5 +1,4 @@
 "use client"
-import Navbar from "../common/Navbar"
 import Brands from "../common/Brands"
 import { motion } from "motion/react"
 
@@ -17,13 +16,12 @@ const staggerContainer = {
 
 export default function HealthServices() {
     return (
-        <section className="bg-[#FCF2E580] h-auto relative flex flex-col" style={{
+        <section className="bg-[#FCF2E580] h-auto relative flex flex-col pt-28" style={{
             backgroundImage: "url('/bg.png')",
             backgroundPosition: "center 140px",
             backgroundRepeat: "no-repeat, no-repeat",
                     backgroundPosition: "center, center",
                     backgroundSize: "cover, cover",}}>
-            <Navbar />
             <div className=" bg-no-repeat bg-cover mt-10 ">
                 <motion.div 
                     className="pt-10 sm:mx-10 md:mx-20 lg:mx-32 mx-5 flex-1 flex items-center"

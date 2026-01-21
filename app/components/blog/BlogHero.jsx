@@ -23,7 +23,7 @@ const staggerContainer = {
 
 export default function BlogHero() {
     return (
-        <section className="relative overflow-hidden bg-gradient-to-br from-[#FCF2E5] via-[#FFF8F0] to-[#FCF2E5] py-16 sm:py-20 lg:py-24">
+        <section className="relative  overflow-hidden bg-gradient-to-br from-[#FCF2E5] via-[#FFF8F0] to-[#FCF2E5] py-16 sm:py-20 lg:py-24">
             {/* Background Decorations */}
             <div className="absolute top-0 right-0 w-96 h-96 bg-gradient-to-br from-[#F37303]/10 to-transparent rounded-full blur-3xl -translate-y-1/2 translate-x-1/2" />
             <div className="absolute bottom-0 left-0 w-80 h-80 bg-gradient-to-tr from-[#F37303]/5 to-transparent rounded-full blur-3xl translate-y-1/2 -translate-x-1/2" />
@@ -45,7 +45,7 @@ export default function BlogHero() {
                 transition={{ duration: 2, repeat: Infinity, ease: "easeInOut", delay: 1 }}
             />
 
-            <div className="mx-5 sm:mx-10 md:mx-20 lg:mx-32 relative z-10">
+            <div className="mx-5 sm:mx-10 md:mx-20 lg:mx-32 relative z-10 pt-28">
                 <motion.div
                     className="flex flex-col items-center text-center max-w-3xl mx-auto"
                     variants={staggerContainer}

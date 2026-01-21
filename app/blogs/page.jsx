@@ -1,8 +1,6 @@
 "use client"
 import { useState, useMemo, useEffect } from "react"
 import { motion, AnimatePresence, LayoutGroup } from "motion/react"
-import Navbar from "../components/common/Navbar"
-import Footer from "../components/common/Footer"
 import BlogHero from "../components/blog/BlogHero"
 import BlogCard from "../components/blog/BlogCard"
 import CategoryFilter from "../components/blog/CategoryFilter"
@@ -53,9 +51,7 @@ export default function BlogsPage() {
     const featuredBlogs = blogs.filter(blog => blog.featured).slice(0, 2)
 
     return (
-        <div className="min-h-screen bg-white">
-            <Navbar />
-            
+        <div className="min-h-screen">
             {/* Hero Section */}
             <BlogHero />
 
@@ -291,8 +287,6 @@ export default function BlogsPage() {
                     </motion.div>
                 </section>
             </main>
-
-            <Footer />
         </div>
     )
 }

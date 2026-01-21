@@ -1,6 +1,5 @@
 "use client"
 import Image from "next/image"
-import Navbar from "../common/Navbar"
 import { motion } from "motion/react"
 
 const fadeUp = {
@@ -29,8 +28,6 @@ export default function Hero() {
         <>
             {/* Hero Section - 100vh with centered text */}
             <section className="bg-[#FCF2E5] min-h-screen relative overflow-hidden">
-                <Navbar />
-                
                 {/* Decorative orange circles */}
                 <motion.div 
                     className="absolute bottom-50 md:bottom-30 lg:bottom-50 left-10 md:left-40"

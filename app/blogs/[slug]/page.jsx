@@ -4,8 +4,6 @@ import { notFound } from "next/navigation"
 import Image from "next/image"
 import Link from "next/link"
 import { motion } from "motion/react"
-import Navbar from "../../components/common/Navbar"
-import Footer from "../../components/common/Footer"
 import ReadingProgress from "../../components/blog/ReadingProgress"
 import SocialShare, { MobileSocialShare } from "../../components/blog/SocialShare"
 import RelatedPosts from "../../components/blog/RelatedPosts"
@@ -130,11 +128,9 @@ export default function BlogDetailPage({ params }) {
     }
 
     return (
-        <div className="min-h-screen bg-white">
+        <div className="min-h-screen">
             {/* Reading Progress Bar */}
             <ReadingProgress />
-            
-            <Navbar />
 
             {/* Social Share Sidebar */}
             <SocialShare title={blog.title} slug={blog.slug} />
@@ -324,8 +320,6 @@ export default function BlogDetailPage({ params }) {
                     <RelatedPosts posts={blogs} currentSlug={blog.slug} />
                 </div>
             </main>
-
-            <Footer />
         </div>
     )
 }
