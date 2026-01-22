@@ -2,289 +2,274 @@
    "products": [
       {
          "id": 1,
-         "slug": "hygrix-ipa-spray",
+         "slug": "hygrix-absorbency-granules",
          "image": "/product.png",
-         "quantity": "500ml Bottle",
-         "name": "Hygrix IPA Spray",
-         "category": "Sanitizers",
-         "shortDescription": "Professional-grade isopropyl alcohol spray for surface disinfection.",
-         "description": "Hygrix IPA Spray is a professional-grade isopropyl alcohol solution designed for effective surface disinfection. This fast-drying formula eliminates 99.9% of germs and bacteria on contact, making it ideal for healthcare settings, offices, and home use. The convenient spray bottle ensures even coverage and easy application on various surfaces.",
+         "quantity": "200g / 75g",
+         "name": "Hygrix Absorbency Granules",
+         "category": "Absorbents",
+         "shortDescription": "High-absorbency granules for biohazard spill containment and odour control.",
+         "description": "Hygrix Absorbency Granules are designed for rapid containment and removal of biohazards such as urine and vomit. Mildly perfumed to neutralise unpleasant odours, they are suitable for use on hard and soft surfaces, bedpans, vomit bowls and urine bottles, and can secure liquid clinical waste for safe transportation.",
          "features": [
-            "99.9% germ elimination",
-            "Fast-drying formula",
-            "Safe for most surfaces",
-            "Healthcare-grade quality",
-            "Convenient spray application"
+            "High absorbency for rapid spill control",
+            "Mild perfume to neutralise odours",
+            "Suitable for hard and soft surfaces",
+            "Ideal for bedpans, vomit bowls and urine bottles",
+            "Supports safe transport of liquid clinical waste"
          ],
          "specifications": {
-            "Volume": "500ml",
-            "Active Ingredient": "70% Isopropyl Alcohol",
-            "Application": "Spray directly on surface",
-            "Shelf Life": "24 months"
+            "Part Numbers": "HAG2000 (200g), HAG1075 (75g)",
+            "Absorbency": "Up to 20L liquid per shaker",
+            "Use Cases": "Urine and vomit spills, clinical waste transport",
+            "Fragrance": "Mildly perfumed"
          }
       },
       {
          "id": 2,
-         "slug": "hygrix-hand-sanitizer-gel",
+         "slug": "hygrix-biohazard-spill-kit-max",
          "image": "/product.png",
-         "quantity": "250ml Bottle",
-         "name": "Hygrix Hand Sanitizer Gel",
-         "category": "Sanitizers",
-         "shortDescription": "Moisturizing hand sanitizer gel with aloe vera extract.",
-         "description": "Hygrix Hand Sanitizer Gel combines powerful germ-fighting action with skin-nourishing ingredients. Enriched with aloe vera and vitamin E, this sanitizer keeps your hands clean without causing dryness. Perfect for frequent use throughout the day.",
+         "quantity": "All-In-One Kit",
+         "name": "Hygrix Biohazard Spill Kit Max",
+         "category": "Spill Kits",
+         "partNumber": "HBSK1001",
+         "shortDescription": "All-in-one biohazard spill kit with neutralising sorbent and chlorine tablets.",
+         "description": "The Hygrix Biohazard All-In-One Spill Kit Max uses advanced sorbent technology to contain spills including blood, saliva, urine and vomit. The non-hazardous sorbent neutralises acids, amines and odours, and the kit includes Hygrix CL tablets to disinfect contaminated surfaces. Sustainably designed with a cardboard scoop/scraper and biopolymer applicator.",
          "features": [
-            "Kills 99.9% of germs",
-            "Enriched with aloe vera",
-            "Non-sticky formula",
-            "Moisturizing properties",
-            "Pleasant fragrance"
+            "Neutralising sorbent for versatile spill containment",
+            "Includes CL tablets for surface disinfection",
+            "Non-hazardous, sustainable components",
+            "Swift, hassle-free spill decontamination",
+            "Hard case with wall mount and poster"
          ],
          "specifications": {
-            "Volume": "250ml",
-            "Active Ingredient": "62% Ethyl Alcohol",
-            "Skin Type": "All skin types",
-            "Shelf Life": "36 months"
+            "Case": "Hard yellow case, wall mount, poster",
+            "Includes": "Nitrile gloves, apron, Multi-Purpose Sorbent Powder, dilution pot, cardboard scoop/scraper, clinical waste bags, 4 CL tablets, biopolymer applicator, illustrated instructions",
+            "Application": "Biohazard spill containment and disinfection",
+            "Part Number": "HBSK1001"
          }
       },
       {
          "id": 3,
-         "slug": "hygrix-disinfectant-wipes",
+         "slug": "hygrix-bleach-spray",
          "image": "/product.png",
-         "quantity": "100 Wipes Pack",
-         "name": "Hygrix Disinfectant Wipes",
-         "category": "Wipes",
-         "shortDescription": "Multi-surface disinfectant wipes for quick sanitization.",
-         "description": "Hygrix Disinfectant Wipes provide convenient, on-the-go cleaning for multiple surfaces. These pre-moistened wipes effectively remove dirt, grime, and germs from desks, phones, door handles, and more. The durable, textured material ensures thorough cleaning without tearing.",
+         "quantity": "1L Ready-to-Use",
+         "name": "Hygrix Bleach Spray",
+         "category": "Disinfectants",
+         "partNumber": "HBS1001",
+         "shortDescription": "Detergent-sanitising chlorine spray for cleaning and sporicidal disinfection.",
+         "description": "Hygrix Bleach Spray is an effective chlorine disinfectant for surface and environmental hygiene. Its dual-action detergent sanitising solution combines clean–rinse–disinfect into one process and delivers broad-spectrum efficacy including sporicidal disinfection, with proven performance on surface biofilms.",
          "features": [
-            "Multi-surface compatible",
-            "Pre-moistened convenience",
-            "Textured for better cleaning",
-            "Resealable packaging",
-            "Biodegradable material"
+            "Clean and disinfect in one step",
+            "Broad-spectrum, sporicidal efficacy",
+            "Effective on surface biofilms",
+            "Suitable for daily, terminal, isolation and outbreak cleaning",
+            "Detergent sanitising formulation"
          ],
          "specifications": {
-            "Count": "100 wipes",
-            "Size": "7 x 8 inches",
-            "Material": "Non-woven fabric",
-            "Shelf Life": "18 months"
+            "Suitable Surfaces": "Rooms, bays, wards; bed spaces; commodes; toilets; bathrooms; mattresses; bed frames; stainless steel; sealed floors; worktops",
+            "Format": "Ready-to-use chlorine solution",
+            "Part Number": "HBS1001"
          }
       },
       {
          "id": 4,
-         "slug": "hygrix-surface-cleaner",
+         "slug": "hygrix-bleach-wipes",
          "image": "/product.png",
-         "quantity": "1 Liter Bottle",
-         "name": "Hygrix Surface Cleaner",
-         "category": "Cleaners",
-         "shortDescription": "All-purpose surface cleaner with antibacterial action.",
-         "description": "Hygrix Surface Cleaner is an all-purpose cleaning solution that combines powerful cleaning action with antibacterial properties. Suitable for kitchens, bathrooms, and general household surfaces, it leaves surfaces sparkling clean with a fresh scent.",
+         "quantity": "90 Wipes Canister",
+         "name": "Hygrix Bleach Wipes",
+         "category": "Wipes",
+         "partNumber": "HBW1200",
+         "shortDescription": "Pre-soaked sporicidal wipes for hard, non-porous surfaces.",
+         "description": "Hygrix Bleach Wipes are heavily saturated, ready-to-use wipes delivering virucidal, bactericidal, fungicidal, tuberculocidal and sporicidal action with short exposure times. They eliminate the need for soaking dry wipes and provide excellent cleaning efficacy for professional environments.",
          "features": [
-            "All-purpose formula",
-            "Antibacterial action",
-            "Fresh citrus scent",
-            "Streak-free finish",
-            "Safe for food-contact surfaces"
+            "Virucidal, bactericidal, fungicidal, tuberculocidal and sporicidal",
+            "Short exposure time (≤3 minutes)",
+            "Heavily saturated for superior cleaning",
+            "Ready-to-use—no prep required",
+            "Ideal for biohazard spills (vomit & urine)"
          ],
          "specifications": {
-            "Volume": "1 Liter",
-            "pH Level": "Neutral",
-            "Dilution": "Ready to use",
-            "Shelf Life": "24 months"
+            "Count": "90 large wipes",
+            "Exposure Time": "≤3 minutes",
+            "Suitable Surfaces": "Rooms, bays, wards; commodes; toilets; bathrooms; mattresses; bed frames; stainless steel; sealed floors; worktops",
+            "Part Number": "HBW1200"
          }
       },
       {
          "id": 5,
-         "slug": "hygrix-3-ply-face-masks",
+         "slug": "hygrix-chemical-spill-kit",
          "image": "/product.png",
-         "quantity": "Box of 50",
-         "name": "Hygrix 3-Ply Face Masks",
-         "category": "Personal Protection",
-         "shortDescription": "Premium quality 3-ply disposable face masks.",
-         "description": "Hygrix 3-Ply Face Masks offer reliable respiratory protection with comfort. Each mask features three layers of filtration, adjustable nose bridge, and soft ear loops for all-day wear. Ideal for medical, industrial, and everyday use.",
+         "quantity": "Lab Kit",
+         "name": "Hygrix Chemical Spill Kit",
+         "category": "Spill Kits",
+         "partNumber": "HCSK1001",
+         "shortDescription": "Laboratory chemical spill kit with absorbent pads, tweezers and full PPE.",
+         "description": "Suited for laboratory environments, this kit contains dual-layer absorbent pads for hazardous chemical spills and tweezers for glass/sharps pickup. Each robust red case includes a wall mount and three complete spill packs with PPE and instructions to safely contain spills up to 1L.",
          "features": [
-            "3-layer filtration",
-            "Adjustable nose bridge",
-            "Soft elastic ear loops",
-            "Breathable material",
-            "Latex-free"
+            "Dual-layer pads for rapid absorption",
+            "Tweezers for safe sharps pickup",
+            "Full PPE included per pack",
+            "Robust red case with wall bracket",
+            "Three complete spill packs"
          ],
          "specifications": {
-            "Quantity": "50 masks per box",
-            "Filtration": "BFE ≥ 95%",
-            "Size": "17.5 x 9.5 cm",
-            "Material": "Non-woven polypropylene"
+            "Capacity": "Up to 1L per incident",
+            "Case": "Red robust case + wall mounting bracket",
+            "Each Pack": "Nitrile gloves, apron/thumb loop gown, face mask/eye shield, 2x IPA wipes, absorbent pads, tweezers, disposal bag, instructions",
+            "Part Number": "HCSK1001"
          }
       },
       {
          "id": 6,
-         "slug": "hygrix-pocket-sanitizer",
+         "slug": "hygrix-cl-granules",
          "image": "/product.png",
-         "quantity": "50ml Spray",
-         "name": "Hygrix Pocket Sanitizer",
-         "category": "Sanitizers",
-         "shortDescription": "Compact travel-size sanitizer for on-the-go protection.",
-         "description": "Hygrix Pocket Sanitizer is the perfect travel companion for maintaining hand hygiene wherever you go. This compact spray fits easily in pockets, purses, or bags, providing instant protection when soap and water aren't available.",
+         "quantity": "500g Shaker",
+         "name": "Hygrix CL Granules",
+         "category": "Absorbents",
+         "partNumber": "HCG1001",
+         "shortDescription": "Biohazard absorbent granules in shaker bottle for spill containment.",
+         "description": "Hygrix CL Granules absorb biohazardous liquid spillages (blood, saliva, CSF) to prevent spreading and enable easy disposal. Use the scoop and scrapers to collect into clinical waste bags and follow with Hygrix CL tablets at 10,000ppm to disinfect the area.",
          "features": [
-            "Travel-friendly size",
-            "Quick-dry spray formula",
-            "Light refreshing scent",
-            "Clip-on cap option",
-            "TSA approved size"
+            "Convenient shaker for rapid application",
+            "Absorbs a range of biohazard fluids",
+            "Supports complete spill process with CL tablets",
+            "Aligned to CDC/NHS IPC guidance",
+            "Easy disposal via clinical waste bags"
          ],
          "specifications": {
-            "Volume": "50ml",
-            "Active Ingredient": "70% Ethyl Alcohol",
-            "Format": "Spray",
-            "Shelf Life": "24 months"
+            "Absorbency": "Up to 500ml per shaker",
+            "Guidance": "US CDC and NHS IPC recommendations",
+            "Process": "Absorb → collect → dispose → disinfect",
+            "Part Number": "HCG1001"
          }
       },
       {
          "id": 7,
-         "slug": "hygrix-nitrile-gloves",
+         "slug": "hygrix-cl-tab-tablets",
          "image": "/product.png",
-         "quantity": "Pair",
-         "name": "Hygrix Nitrile Gloves",
-         "category": "Personal Protection",
-         "shortDescription": "Powder-free nitrile examination gloves for medical use.",
-         "description": "Hygrix Nitrile Gloves provide superior protection and dexterity for medical and industrial applications. Made from high-quality nitrile, these gloves offer excellent chemical resistance and are ideal for those with latex allergies.",
+         "quantity": "200 / 100 Tablets",
+         "name": "Hygrix CL TAB Tablets (NaDCC)",
+         "category": "Disinfectants",
+         "partNumber": "BNG1233 / BNG1250 / BNG1150",
+         "shortDescription": "NaDCC tablets—precursor to hypochlorous acid—for high-level disinfection.",
+         "description": "Hygrix CL TAB (NaDCC) tablets dissolve to produce hypochlorous acid, a powerful, biodegradable disinfectant suitable for high-level and outbreak disinfection including SARS-CoV-2. Stable tablet format reduces packaging waste and simplifies transportation and dosing.",
          "features": [
-            "Powder-free design",
-            "Latex-free material",
-            "Textured fingertips",
-            "Ambidextrous fit",
-            "High tensile strength"
+            "Accurate dosing to required ppm",
+            "Biodegradable, non-toxic hypochlorous acid",
+            "~100× more effective than household bleach",
+            "Stable tablet format—easy transport",
+            "Suitable for high-level/outbreak disinfection"
          ],
          "specifications": {
-            "Material": "Nitrile",
-            "Sizes Available": "S, M, L, XL",
-            "Thickness": "4 mil",
-            "Quantity": "100 gloves per box"
+            "Active": "Sodium dichloroisocyanurate (NaDCC)",
+            "Packs": "BNG1233 (3.3g, 200 tabs), BNG1250 (5.0g, 200 tabs), BNG1150 (5.0g, 100 tabs)",
+            "Standards": "BS EN 1650, 13704, 1276, 14476 (Adenovirus/Poliovirus/Enveloped), 14348, 13624, 13727, 13697; conforms to US CDC/WHO guidelines",
+            "Use": "Isolation, terminal and general environmental disinfection"
          }
       },
       {
          "id": 8,
-         "slug": "hygrix-floor-disinfectant",
+         "slug": "hygrix-cytotoxic-spill-kit",
          "image": "/product.png",
-         "quantity": "5 Liter Canister",
-         "name": "Hygrix Floor Disinfectant",
-         "category": "Cleaners",
-         "shortDescription": "Industrial-strength floor disinfectant for large areas.",
-         "description": "Hygrix Floor Disinfectant is formulated for industrial and commercial floor cleaning. This concentrated solution effectively sanitizes large floor areas while leaving a pleasant, long-lasting fragrance. Suitable for hospitals, schools, and commercial spaces.",
+         "quantity": "Kit",
+         "name": "Hygrix Cytotoxic Spill Kit",
+         "category": "Spill Kits",
+         "partNumber": "HCSK2001",
+         "shortDescription": "Kit to manage cytotoxic liquid and powder spills with neutralising agents and full PPE.",
+         "description": "Curated for cytotoxic spills across hospitals, laboratories and pharmacies, this kit manages liquid and powder spills. Sterile water pods and pads contain powders; Cyto absorbent granules and Cygrix powder neutralise residue. Includes full PPE, waste bags and clear instructions for safe decontamination.",
          "features": [
-            "Concentrated formula",
-            "Hospital-grade disinfection",
-            "Pleasant pine fragrance",
-            "Safe for all floor types",
-            "Economical large size"
+            "Handles cytotoxic liquids and powders",
+            "Cygrix powder neutralises residue",
+            "Comprehensive PPE packs (FFP3, visor, gowns)",
+            "Clear instruction sheet and record card",
+            "Safe waste containment and disposal"
          ],
          "specifications": {
-            "Volume": "5 Liters",
-            "Dilution Ratio": "1:100",
-            "Coverage": "Up to 500 sq meters",
-            "Shelf Life": "36 months"
+            "PPE": "2× packs each: gloves, thumb loop gown, FFP3 mask, eye visor, oversleeves, overshoes",
+            "Liquid Clean-up": "LP sorbent powder, scoop/scraper, tweezers",
+            "Powder Clean-up": "Sterile water pods, absorbent pads",
+            "Decontamination": "Cygrix Powder 10g sachets, 250ml diluter, paper towels",
+            "Waste": "Cytotoxic waste bags, ties, warning sign, record card",
+            "Part Number": "HCSK2001"
          }
       },
       {
          "id": 9,
-         "slug": "hygrix-baby-wipes",
+         "slug": "hygrix-neutralising-spray",
          "image": "/product.png",
-         "quantity": "30 Wipes Pack",
-         "name": "Hygrix Baby Wipes",
-         "category": "Wipes",
-         "shortDescription": "Gentle, hypoallergenic wipes for sensitive baby skin.",
-         "description": "Hygrix Baby Wipes are specially formulated for delicate baby skin. These ultra-soft, hypoallergenic wipes are free from alcohol, parabens, and harsh chemicals, making them perfect for diaper changes and gentle face cleaning.",
+         "quantity": "250mL RTU",
+         "name": "Hygrix Neutralising Spray",
+         "category": "Sprays",
+         "partNumber": "HNS1250",
+         "shortDescription": "Odour-neutralising spray for soft and hard surfaces and textiles.",
+         "description": "Neutralises odours where urine or vomit spills have occurred. Cleans while removing odours using organic, non-toxic, hypoallergenic and biodegradable ingredients. Delivered with a new fine-mist trigger; available in 250mL bottles and 5L refills.",
          "features": [
-            "Hypoallergenic formula",
-            "Alcohol and paraben-free",
-            "Ultra-soft texture",
-            "Dermatologically tested",
-            "Resealable flip-top lid"
+            "Truly kills odours—not masking",
+            "Effective on soft/hard surfaces and textiles",
+            "Lightly fragranced, hypoallergenic",
+            "Biodegradable, non-toxic ingredients",
+            "Fine mist trigger for even coverage"
          ],
          "specifications": {
-            "Count": "30 wipes",
-            "Size": "6 x 7 inches",
-            "Material": "Cotton blend",
-            "pH": "Skin-neutral"
+            "Sizes": "250mL RTU, 5L refill",
+            "Use": "Worktops, sealed floors, textiles",
+            "Part Number": "HNS1250"
          }
       },
       {
          "id": 10,
-         "slug": "hygrix-touchless-dispenser",
+         "slug": "hygrix-urine-vomit-spill-kit",
          "image": "/product.png",
-         "quantity": "Auto Dispenser",
-         "name": "Hygrix Touchless Dispenser",
-         "category": "Dispensers",
-         "shortDescription": "Automatic touchless sanitizer dispenser for hygiene stations.",
-         "description": "Hygrix Touchless Dispenser uses infrared sensor technology to dispense sanitizer without physical contact. Perfect for high-traffic areas, this sleek dispenser helps maintain hygiene while adding a modern touch to any environment.",
+         "quantity": "Refillable Hard Case",
+         "name": "Hygrix Urine & Vomit Spill Kit",
+         "category": "Spill Kits",
+         "partNumber": "HUSK1001",
+         "shortDescription": "Kit to clear and contain up to 6 urine/vomit spills with granules, neutraliser and PPE.",
+         "description": "Contains high-absorbency granules, neutralising spray, gloves, disinfectant wipes, scoops and clinical waste bags to rapidly collect and dispose spills with minimal contact. Includes instructional poster and wall bracket in a refillable hard case.",
          "features": [
-            "Infrared sensor technology",
-            "Adjustable dispense volume",
-            "Battery or USB powered",
-            "1000ml capacity tank",
-            "Low liquid indicator"
+            "High-absorbency granules",
+            "Ready-to-use neutralising spray",
+            "Disinfectant surface wipes",
+            "Nitrile gloves and aprons",
+            "Wall bracket and refillable hard case"
          ],
          "specifications": {
-            "Capacity": "1000ml",
-            "Power": "4x AA batteries or USB",
-            "Sensor Range": "0-6 cm",
-            "Material": "ABS Plastic"
+            "Contents": "200g granules shaker, 250ml neutraliser spray, 6× nitrile gloves, 6× disinfectant wipe packs, 6× cardboard scoops/scrapers, 6× clinical waste bags, 6× aprons, poster, wall bracket, refillable hard case",
+            "Capacity": "Up to 6 spills",
+            "Part Number": "HUSK1001"
          }
       },
       {
          "id": 11,
-         "slug": "hygrix-foaming-hand-wash",
+         "slug": "hygrix-urine-vomit-spill-pack",
          "image": "/product.png",
-         "quantity": "200ml Foam",
-         "name": "Hygrix Foaming Hand Wash",
-         "category": "Sanitizers",
-         "shortDescription": "Rich foaming hand wash with antibacterial properties.",
-         "description": "Hygrix Foaming Hand Wash creates a luxurious lather that effectively cleanses hands while being gentle on skin. The antibacterial formula removes germs while the moisturizing agents prevent dryness from frequent washing.",
+         "quantity": "Single Use Pack",
+         "name": "Hygrix Urine & Vomit Spill Pack",
+         "category": "Spill Packs",
+         "partNumber": "HUP1001",
+         "shortDescription": "Single-use pack for rapid urine/vomit spill containment and disinfection.",
+         "description": "A single-use pack including sorbent powder, scoop/scraper and disinfectant surface wipes to quickly collect and disinfect spills with minimal contact. Packed in one bag with clearly illustrated instructions for use across all industries.",
          "features": [
-            "Rich foaming action",
-            "Antibacterial formula",
-            "Moisturizing ingredients",
-            "Gentle on skin",
-            "Economical pump dispenser"
+            "Life Protected sorbent powder",
+            "Cardboard scoop and scraper",
+            "Disinfectant surface wipes",
+            "Clinical waste bag",
+            "Illustrated instructions on pack"
          ],
          "specifications": {
-            "Volume": "200ml",
-            "Format": "Foaming",
-            "Scent": "Fresh lavender",
-            "Shelf Life": "30 months"
-         }
-      },
-      {
-         "id": 12,
-         "slug": "hygrix-first-aid-kit",
-         "image": "/product.png",
-         "quantity": "Kit",
-         "name": "Hygrix First Aid Kit",
-         "category": "Medical Supplies",
-         "shortDescription": "Comprehensive first aid kit for home and office use.",
-         "description": "Hygrix First Aid Kit contains all essential medical supplies for treating minor injuries and emergencies. This compact, organized kit includes bandages, antiseptic wipes, gauze, scissors, and more, making it ideal for homes, offices, and vehicles.",
-         "features": [
-            "100+ essential items",
-            "Organized compartments",
-            "Compact carrying case",
-            "Comprehensive guide included",
-            "Meets safety standards"
-         ],
-         "specifications": {
-            "Items": "108 pieces",
-            "Case Size": "25 x 18 x 8 cm",
-            "Material": "Durable EVA case",
-            "Suitable For": "Home, office, travel"
+            "Contents": "Nitrile gloves, apron, sorbent powder sachet, cardboard scoop/scraper, 2× disinfectant wipe packs, clinical waste bag, instructions",
+            "Use": "Rapid single-incident clean-up",
+            "Part Number": "HUP1001"
          }
       }
    ],
    "categories": [
       "All Products",
-      "Sanitizers",
+      "Absorbents",
+      "Spill Kits",
+      "Disinfectants",
       "Wipes",
-      "Cleaners",
-      "Personal Protection",
-      "Dispensers",
-      "Medical Supplies"
+      "Sprays",
+      "Spill Packs"
    ],
    "reviews": [
       {
