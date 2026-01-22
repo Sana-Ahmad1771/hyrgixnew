@@ -3,9 +3,10 @@
 import Image from "next/image"
 import { useState } from "react";
 import Link from "next/link";
-import { motion } from "motion/react"
+import { usePathname } from "next/navigation";
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
+  const pathname = usePathname();
 
   const navLinks = [
     { name: "Home", href: "/" },
@@ -14,6 +15,11 @@ export default function Navbar() {
     { name: "Blogs", href: "/blogs" },
     { name: "Contact", href: "/contactus" },
   ];
+
+  const isActive = (href) => {
+    if (href === "/") return pathname === "/";
+    return pathname.startsWith(href);
+  };
 
   return (
     <nav className="absolute top-0 left-0 w-full z-50">
@@ -36,7 +42,11 @@ export default function Navbar() {
         <div className="hidden lg:flex gap-6 items-center">
           {navLinks.map((link, index) => (
             <div key={link.name} className="flex items-center gap-6">
-              <Link href={link.href} className="hover:text-[#F37303] transition-colors">
+              <Link
+                href={link.href}
+                className={`relative px-0.5 transition-colors after:absolute after:left-0 after:-bottom-1 after:h-0.5 after:w-full after:scale-x-0 after:origin-left after:bg-[#F37303] after:transition-transform after:duration-200 hover:text-[#F37303] hover:after:scale-x-100 ${isActive(link.href) ? "text-[#F37303] after:scale-x-100" : "text-[#171717]"}`}
+                aria-current={isActive(link.href) ? "page" : undefined}
+              >
                 <span>{link.name}</span>
               </Link>
               {index !== navLinks.length - 1 && (
@@ -47,8 +57,8 @@ export default function Navbar() {
         </div>
 
         {/* Desktop Contact Button */}
-        <Link href="/contact" className="hidden lg:flex items-center justify-center w-24.5 h-11 rounded-[100px] bg-black shadow-[-13px_22px_12.8px_0_rgba(255,255,255,0.25)] cursor-pointer hover:bg-gray-800 transition-all">
-          <span className="text-white text-sm">Contact Us</span>
+        <Link href="/contactus" className="hidden lg:flex items-center justify-center px-2.5 h-11 rounded-[100px] bg-black shadow-[-13px_22px_12.8px_0_rgba(255,255,255,0.25)] cursor-pointer hover:bg-gray-800 transition-all">
+          <span className="text-white text-sm">Contact our team</span>
         </Link>
 
         {/* Mobile Menu Toggle */}
@@ -67,7 +77,7 @@ export default function Navbar() {
       {/* Mobile Menu Overlay */}
       <div className={`
         lg:hidden absolute top-full left-0 right-0 mx-5 md:mx-20 lg:mx-30  bg-white shadow-xl overflow-hidden transition-all duration-300 ease-in-out z-40
-        ${isOpen ? "max-h-82 opacity-100 rounded-b-4xl" : "max-h-0 opacity-0"}
+        ${isOpen ? "max-h-96 opacity-100 rounded-b-4xl" : "max-h-0 opacity-0"}
       `}>
         <div className="flex flex-col p-6 gap-4 items-center">
           {navLinks.map((link) => (
@@ -75,15 +85,20 @@ export default function Navbar() {
               key={link.name}
               href={link.href}
               onClick={() => setIsOpen(false)}
-              className="text-lg font-medium border-b border-gray-100 w-full text-center pb-2"
+              className={`text-lg font-medium border-b border-gray-100 w-full text-center pb-2 transition-colors ${isActive(link.href) ? "text-[#F37303]" : "text-[#171717]"}`}
+              aria-current={isActive(link.href) ? "page" : undefined}
             >
               {link.name}
             </Link>
           ))}
           <div className="w-full flex justify-center mt-2">
-            <div className="flex items-center justify-center w-full h-11 rounded-[100px] bg-black">
-              <span className="text-white">Contact Us</span>
-            </div>
+            <Link
+              href="/contactus"
+              onClick={() => setIsOpen(false)}
+              className="flex items-center justify-center w-full h-11 rounded-[100px] bg-black hover:bg-gray-800 transition-colors"
+            >
+              <span className="text-white">Contact our team</span>
+            </Link>
           </div>
         </div>
       </div>
