@@ -276,54 +276,33 @@
    ],
    "reviews": [
       {
-         "id": 6,
-         "description": "Lore refers to the body of traditional knowledge, stories, and beliefs passed down within a culture or group, often orally, covering subjects like folklore, history, or a fictional universe's backstory.",
-         "image": "/user.png",
-         "name": "carolyn dover",
-         "post": "Designer"
-      },
-      {
-         "id": 7,
-         "description": "Lore refers to the body of traditional knowledge, stories, and beliefs passed down within a culture or group, often orally, covering subjects like folklore, history, or a fictional universe's backstory.",
-         "image": "/user.png",
-         "name": "john smith",
-         "post": "Developer"
-      },
-      {
-         "id": 8,
-         "description": "Lore refers to the body of traditional knowledge, stories, and beliefs passed down within a culture or group, often orally, covering subjects like folklore, history, or a fictional universe's backstory.",
-         "image": "/user.png",
-         "name": "sara wilson",
-         "post": "Manager"
-      },{
          "id": 1,
-         "description": "Lore refers to the body of traditional knowledge, stories, and beliefs passed down within a culture or group, often orally, covering subjects like folklore, history, or a fictional universe's backstory.",
+         "description": "Hygrix IPA sprays and wipes helped us standardize infection control across 14 clinics. Stock is consistent and documentation is always ready for audits.",
          "image": "/user.png",
-         "name": "sara wilson",
-         "post": "Manager"
-      },{
+         "name": "Dr. Sarah Mitchell",
+         "post": "Medical Director"
+      },
+      {
          "id": 2,
-         "description": "Lore refers to the body of traditional knowledge, stories, and beliefs passed down within a culture or group, often orally, covering subjects like folklore, history, or a fictional universe's backstory.",
+         "description": "We rolled out Hygrix touchless dispensers in all hotel lobbies. Guests notice them, and the refill program keeps operations simple for our teams.",
          "image": "/user.png",
-         "name": "sara wilson",
-         "post": "Manager"
-      },{
+         "name": "Omar Rahman",
+         "post": "Hospitality Operations"
+      },
+      {
          "id": 3,
-         "description": "Lore refers to the body of traditional knowledge, stories, and beliefs passed down within a culture or group, often orally, covering subjects like folklore, history, or a fictional universe's backstory.",
+         "description": "Training support from Hygrix made it easy to refresh hygiene protocols for 600 staff. The products are gentle on skin yet meet our compliance needs.",
          "image": "/user.png",
-         "name": "sara wilson",
-         "post": "Manager"
+         "name": "Lina Al Mansoori",
+         "post": "HR & HSE Lead"
       },
       {
          "id": 4,
-         "description": "Lore refers to the body of traditional knowledge, stories, and beliefs passed down within a culture or group, often orally, covering subjects like folklore, history, or a fictional universe's backstory.",
+         "description": "Fast local delivery and reliable batches are why we stick with Hygrix for our schools. Parents appreciate the visible hygiene standards.",
          "image": "/user.png",
-         "name": "sara wilson",
-         "post": "Manager"
+         "name": "James Carter",
+         "post": "School Administrator"
       }
-      
-      
-      
    ],
    "healthpriorities": [
       {
@@ -354,28 +333,28 @@
    "reasons": [
       {
          "id": 13,
-         "text": " Our team consists of board-certified doctors and specialists,",
-         "point": "Experienced Professionals"
+         "text": " Lab-tested, hospital-grade formulations designed to meet infection-prevention protocols across clinical and industrial settings.",
+         "point": "Proven efficacy"
       },
       {
          "id": 14,
-         "text": " We offer a wide range of medical services, from primary care to specialized treatments.",
-         "point": "Comprehensive Services"
+         "text": " Sprays, wipes, PPE, touchless dispensers, and surface cleaners—one catalogue covering every hygiene checkpoint.",
+         "point": "Complete portfolio"
       },
       {
          "id": 15,
-         "text": " We prioritize your comfort, preferences, and overall well-being in every aspect of our care.",
-         "point": "Patient-Centered Care"
+         "text": " Safety data sheets, usage SOPs, and audit-ready documentation included with every SKU to simplify compliance.",
+         "point": "Compliance-ready"
       },
       {
          "id": 16,
-         "text": " We utilize the latest medical technology and evidence-based practices to ensure accurate diagnoses and effective treatments.",
-         "point": "Advanced Technology"
+         "text": " UAE-based production and warehousing to keep lead times short, batches consistent, and replenishment predictable.",
+         "point": "Reliable supply"
       },
       {
          "id": 17,
-         "text": " With multiple locations and flexible scheduling options, we make it easy for you to receive the care you need.",
-         "point": "Convenient Access"
+         "text": " Onboarding, placement guidance, and refresher training led by Hygrix specialists to keep teams engaged and protected.",
+         "point": "Hands-on support"
       }
    ],
    "success": [
@@ -400,21 +379,21 @@
          "id": 21,
          "image": "/call.png",
          "name": "Phone",
-         "des": "We remove the stress and guesswork from healthcare.",
-         "contact": "+4321 567 879 098"
+         "des": "Sales and support for orders, availability, and technical guidance.",
+         "contact": "+971 4 321 7890"
       },
       {
          "id": 22,
          "image": "/sms.png",
          "name": "Email Address",
-         "des": "We remove the stress and guesswork from healthcare.",
-         "contact": "hello@hygrixsupport.com"
+         "des": "Send RFQs, compliance requests, or partnership inquiries.",
+         "contact": "hello@hygrix.com"
       },
       {
          "id": 23,
          "image": "/location.png",
          "name": "Location",
-         "des": "We remove the stress and guesswork from healthcare.",
+         "des": "Local operations and warehousing for rapid GCC fulfillment.",
          "contact": "KIZAD KHIA 8-18 PO. Box 133685,  UAE"
       }
    ],

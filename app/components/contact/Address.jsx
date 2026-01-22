@@ -79,7 +79,7 @@ export default function Address() {
                     viewport={{ once: false }}
                     transition={{ duration: 0.6, delay: 0.3 }}
                 >
-                    Healthcare, Simplified You Can Focus on Living.
+                    Hygrix support is here to help you deploy safer spaces.
                 </motion.h3>
             </motion.div>
 

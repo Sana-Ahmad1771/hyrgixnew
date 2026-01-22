@@ -73,7 +73,7 @@ export default function WhyChooseUs() {
                     viewport={{ once: false, amount: 0.3 }}
                     className="font-aeonik font-normal text-2xl sm:text-3xl md:text-4xl lg:text-[42px] leading-tight transition-all duration-300"
                 >
-                    Why Choose Our <br className="hidden lg:block" /> Medical Care?
+                    Why teams choose Hygrix for infection control
                 </motion.h2>
 
 
@@ -94,7 +94,7 @@ export default function WhyChooseUs() {
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
                 >
-                    <span className="text-white font-medium text-xs sm:text-sm">Get Started</span>
+                    <span className="text-white font-medium text-xs sm:text-sm">Plan my hygiene program</span>
                 </motion.div>
             </motion.div>
         </motion.section>

@@ -34,16 +34,15 @@ export default function Banner() {
           <motion.h2
             className="text-[#171717] font-aeonik text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-normal leading-snug max-w-4xl"
             variants={fadeUp} >
-            Healthcare, Simplified <br className="hidden sm:block" />
-            You Can Focus on Living.
+            Hygrix keeps your spaces safe <br className="hidden sm:block" />
+            with hospital-grade hygiene solutions.
           </motion.h2>
 
           <motion.p
             className="text-[#171717] font-poppins text-sm sm:text-base md:text-lg lg:text-lg font-normal leading-relaxed max-w-3xl"
             variants={fadeUp}
           >
-            We remove the stress and guesswork from healthcare, so you always feel
-            informed, supported, and in control.
+            From IPA sprays and disinfectant wipes to touchless dispensers and PPE, our catalogue is engineered for infection prevention in clinics, workplaces, schools, and public venues.
           </motion.p>
 
           <motion.div
@@ -53,7 +52,7 @@ export default function Banner() {
             transition={{ type: "spring", stiffness: 300 }}
           >
             <span className="text-white text-sm font-medium">
-              View More
+              Explore catalogue
             </span>
           </motion.div>
         </motion.div>

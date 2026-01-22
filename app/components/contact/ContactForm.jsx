@@ -100,7 +100,7 @@ export default function Hero() {
                             viewport={{ once: false }}
                             transition={{ duration: 0.5, delay: 0.4 }}
                         >
-                            Not sure what you need? The team at Square Events will be happy to listen to you and suggest event ideas you hadn't considered.
+                            Tell us about your facility, headcount, and hygiene checkpoints. The Hygrix team will recommend SKUs, share compliance docs, and confirm delivery timelines.
                         </motion.p>
 
                         <motion.form 
@@ -137,7 +137,7 @@ export default function Hero() {
                                 whileTap={{ scale: 0.98 }}
                             >
                                 <button type="button" className="bg-black text-white px-8 py-3 rounded-full text-sm font-semibold hover:bg-gray-800 transition-all">
-                                    Get in Touch
+                                    Submit inquiry
                                 </button>
                             </motion.div>
                         </motion.form>

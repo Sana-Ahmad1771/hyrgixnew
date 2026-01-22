@@ -50,8 +50,7 @@ export default function RedefineHealthCare() {
           transition={{ duration: 0.5, delay: 0.4, ease: "easeOut" }}
           className="text-gray-700 text-xs sm:text-sm md:text-base leading-relaxed md:leading-loose"
         >
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut labore saepe,
-          nulla dicta Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos excepturi doloribus architecto aliquam culpa aut beatae. Quos molestiae iusto repellendus. exercitationem autem id sunt? Ipsa dolore quam atque.
+          Hygrix is the infection-control partner for hospitals, clinics, schools, and workplaces that refuse to compromise on safety. Every formulation is built with hospital-grade efficacy, dermatologically considerate ingredients, and packaging designed for busy teams.
         </motion.p>
 
         <motion.p
@@ -61,9 +60,9 @@ export default function RedefineHealthCare() {
           transition={{ duration: 0.5, delay: 0.5, ease: "easeOut" }}
           className="text-gray-500 text-xs sm:text-sm md:text-base leading-relaxed md:leading-loose mt-3 sm:mt-4"
         >
-          Natus doloremque labore nulla accusamus iusto, dicta odit a odio nostrum pariatur eaque quos.
+          From quick-dry IPA sprays to touchless dispensers and nitrile gloves, our portfolio covers every hygiene checkpoint. We blend regulatory compliance, human-centered design, and dependable supply so you can protect staff, patients, and visitors without friction.
           <span className="text-gray-400">
-            Illum iusto quaerat maiores vel. Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, illo. A quia illum quos veritatis repudiandae.
+            Manufactured in the UAE with rigorous QA, Hygrix products ship with clear usage guides, safety data, and training support for your team.
           </span>
         </motion.p>
 
@@ -74,8 +73,7 @@ export default function RedefineHealthCare() {
           transition={{ duration: 0.5, delay: 0.6, ease: "easeOut" }}
           className="text-gray-400 text-xs sm:text-sm md:text-base leading-relaxed md:leading-loose mt-3 sm:mt-4"
         >
-          Deserunt aspernatur aliquam officia harum culpa quae tempora, labore sapiente,
-          ipsa sequi incidunt laboriosam aut animi Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor, officia! eaque inventore asperiores.
+          Whether you are rolling out hygiene stations across a hospital network or stocking a single facility, Hygrix keeps procurement simple: consistent stock, straightforward SKUs, and responsive local support.
         </motion.p>
       </motion.div>
     </section>

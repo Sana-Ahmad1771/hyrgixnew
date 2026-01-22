@@ -32,6 +32,67 @@ export default function BlogDetailPage({ params }) {
         return new Date(dateString).toLocaleDateString('en-US', options)
     }
 
+    // Article Schema
+    const articleSchema = {
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        "headline": blog.title,
+        "description": blog.excerpt || blog.description || blog.title,
+        "image": blog.image || "https://www.hygrix.com/blog-default.jpg",
+        "author": {
+            "@type": "Person",
+            "name": blog.author || "Hygrix Team"
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "Hygrix",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://www.hygrix.com/logo.png"
+            }
+        },
+        "datePublished": blog.date,
+        "dateModified": blog.updatedDate || blog.date,
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": `https://www.hygrix.com/blogs/${slug}`
+        },
+        "articleSection": blog.category,
+        "keywords": blog.tags ? blog.tags.join(", ") : blog.category
+    };
+
+    // Breadcrumb Schema
+    const breadcrumbSchema = {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://www.hygrix.com"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Blog",
+                "item": "https://www.hygrix.com/blogs"
+            },
+            {
+                "@type": "ListItem",
+                "position": 3,
+                "name": blog.category,
+                "item": `https://www.hygrix.com/blogs?category=${blog.category}`
+            },
+            {
+                "@type": "ListItem",
+                "position": 4,
+                "name": blog.title,
+                "item": `https://www.hygrix.com/blogs/${slug}`
+            }
+        ]
+    };
+
     // Convert markdown-style content to HTML-like structure
     const renderContent = (content) => {
         const paragraphs = content.split('\n\n')
@@ -129,6 +190,16 @@ export default function BlogDetailPage({ params }) {
 
     return (
         <div className="min-h-screen">
+            {/* Structured Data */}
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
+            />
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+            />
+            
             {/* Reading Progress Bar */}
             <ReadingProgress />
 

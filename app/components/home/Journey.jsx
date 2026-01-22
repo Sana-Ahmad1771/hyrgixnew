@@ -57,24 +57,24 @@ export default function Journey() {
             className="text-[#171717] font-aeonik text-2xl md:text-3xl lg:text-4xl font-normal leading-snug"
             variants={fadeUp}
           >
-            Your Journey <br /> Starts in 5 Simple Steps
+            Deploy Hygrix hygiene <br />in 5 simple steps
           </motion.h4>
 
           <motion.span 
             className="text-[#171717] font-poppins text-sm sm:text-base md:text-md lg:text-lg"
             variants={fadeUp}
           >
-            We remove the stress and guesswork from healthcare.
+            Scope your sites, select SKUs, ship, train staff, and monitor compliance with our team alongside you.
           </motion.span>
 
           <motion.div 
-            className="flex items-center justify-center w-28 sm:w-30 md:w-32 h-10 sm:h-10.5 md:h-11 rounded-full bg-black shadow-[-13px_22px_12.8px_0_rgba(255,255,255,0.25)] cursor-pointer hover:bg-gray-900 transition-all duration-300"
+            className="flex items-center justify-center w-32 sm:w-34 md:w-36 h-10 sm:h-10.5 md:h-11 rounded-full bg-black shadow-[-13px_22px_12.8px_0_rgba(255,255,255,0.25)] cursor-pointer hover:bg-gray-900 transition-all duration-300"
             variants={fadeUp}
             whileHover={{ scale: 1.05, y: -2 }}
             whileTap={{ scale: 0.95 }}
           >
             <span className="text-white font-medium text-xs sm:text-sm md:text-base transition-all duration-300">
-              Get Started
+              Plan my rollout
             </span>
           </motion.div>
         </motion.div>

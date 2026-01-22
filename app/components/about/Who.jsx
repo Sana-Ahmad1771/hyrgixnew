@@ -60,8 +60,7 @@ export default function Who() {
           transition={{ duration: 0.5, delay: 0.1, ease: "easeOut" }}
           className="text-gray-700 text-xs sm:text-sm md:text-base leading-relaxed md:leading-loose"
         >
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut labore saepe,
-          nulla dicta Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos excepturi doloribus architecto aliquam culpa aut beatae. Quos molestiae iusto repellendus. exercitationem autem id sunt? Ipsa dolore quam atque.
+          Hygrix is a UAE-born hygiene brand dedicated to preventing infections wherever people gather. Our formulations are engineered for hospitals, clinics, schools, offices, hospitality, and industrial sites that need reliable, high-volume protection.
         </motion.p>
 
         <motion.p 
@@ -71,9 +70,9 @@ export default function Who() {
           transition={{ duration: 0.5, delay: 0.2, ease: "easeOut" }}
           className="text-gray-500 text-xs sm:text-sm md:text-base leading-relaxed md:leading-loose mt-3 sm:mt-4"
         >
-          Natus doloremque labore nulla accusamus iusto, dicta odit a odio nostrum pariatur eaque quos.
+          We combine hospital-grade efficacy with people-first design: quick-dry sprays, durable wipes, ergonomic dispensers, and skin-friendly sanitizers that staff and visitors actually want to use. Every SKU ships with clear usage guidance and safety documentation.
           <span className="text-gray-400">
-            Illum iusto quaerat maiores vel. Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, illo. A quia illum quos veritatis repudiandae.
+            Manufacturing and QA are handled locally for shorter lead times, consistent batches, and responsive support across the GCC.
           </span>
         </motion.p>
 
@@ -84,8 +83,7 @@ export default function Who() {
           transition={{ duration: 0.5, delay: 0.3, ease: "easeOut" }}
           className="text-gray-400 text-xs sm:text-sm md:text-base leading-relaxed md:leading-loose mt-3 sm:mt-4"
         >
-          Deserunt aspernatur aliquam officia harum culpa quae tempora, labore sapiente,
-          ipsa sequi incidunt laboriosam aut animi Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor, officia! eaque inventore asperiores.
+          From single-site orders to national rollouts, Hygrix helps teams standardize hygiene with dependable supply, training resources, and consultative support.
         </motion.p>
       </motion.div>
     </motion.section>

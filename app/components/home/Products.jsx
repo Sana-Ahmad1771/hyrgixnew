@@ -47,7 +47,7 @@ export default function Products() {
           className="text-[#171717] text-center font-aeonik text-3xl sm:text-4xl md:text-4xl font-normal"
           variants={fadeUp}
         >
-          Simplified You Can Focus on Living
+          The Hygrix infection-control range
         </motion.h3>
       </motion.div>
 

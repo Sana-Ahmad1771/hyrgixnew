@@ -44,11 +44,11 @@ export default function HealthTracking() {
 
                 <motion.h2
                     variants={fadeUp}
-                    className="text-[#171717] text-center font-aeonik text-3xl sm:text-4xl md:text-4xl font-normal">Simplified You Can Focus on Living</motion.h2>
+                    className="text-[#171717] text-center font-aeonik text-3xl sm:text-4xl md:text-4xl font-normal">Hygiene built for high-use environments</motion.h2>
 
                 <motion.p
                      variants={fadeUp}
-                     className="text-[#171717] text-center text-base font-normal max-w-2xl">We remove the stress and guesswork from healthcare. so you always feel informed, supported, and in control,We remove the stress and guesswork from healthcare. so you always feel informed, supported, and in control.</motion.p>
+                     className="text-[#171717] text-center text-base font-normal max-w-2xl">From patient wards to factory floors, Hygrix products pair medical-grade efficacy with people-first design, so every dispenser, wipe, and spray is easy to use and tough on pathogens.</motion.p>
             </motion.div>
 
             {/* Grid */}
@@ -75,11 +75,11 @@ export default function HealthTracking() {
                     whileHover={{scale:1.05 }}
                     className="w-full h-85 bg-[#FFE4CF] rounded-3xl flex flex-col p-5 justify-between mx-auto">
                     <h3 className="text-[#171717] font-aeonik text-2xl font-normal">
-                        Smart Health <br /> Tracking
+                        Hospital-grade formulations
                     </h3>
                     <div className="flex flex-col gap-5">
-                        <p className="text-[#171717] font-poppins text-xs font-normal"> We remove the stress and guesswork from healthcare. So you always feel informed, supported, and in control.</p>
-                        <Link href="#" className="underline text-xs">More Information</Link>
+                        <p className="text-[#171717] font-poppins text-xs font-normal">Alcohol sprays, surface disinfectants, wipes, gloves, and masks engineered to meet healthcare and industrial hygiene requirements.</p>
+                        <Link href="/products" className="underline text-xs">View SKUs</Link>
                     </div>
                 </motion.div>
 
@@ -96,10 +96,10 @@ export default function HealthTracking() {
                     variants={fadeUp}
                     whileHover={{scale:1.05 }}
                     className="w-full h-85 bg-[#FFE4CF] rounded-3xl flex flex-col p-5 justify-between mx-auto">
-                    <h3 className="text-[#171717] font-aeonik text-2xl font-normal">Smart Health <br /> Tracking</h3>
+                    <h3 className="text-[#171717] font-aeonik text-2xl font-normal">Ready to ship</h3>
                     <div className="flex flex-col gap-5">
-                        <p className="text-[#171717] font-poppins text-xs font-normal">We remove the stress and guesswork from healthcare. So you always feel informed, supported, and in control.</p>
-                        <Link href="#" className="underline text-xs">More Information</Link>
+                        <p className="text-[#171717] font-poppins text-xs font-normal">Consistent local stock with rapid fulfillment for hospitals, schools, hospitality, and enterprise offices across the GCC.</p>
+                        <Link href="/contactus" className="underline text-xs">Check availability</Link>
                     </div>
                 </motion.div>
 
@@ -110,14 +110,14 @@ export default function HealthTracking() {
                     className="w-full h-85 bg-[#FFE4CF] rounded-3xl flex flex-col p-5 justify-between mx-auto"
                 >
                     <h3 className="text-[#171717] font-aeonik text-2xl font-normal">
-                        Smart Health <br /> Tracking
+                        Compliance ready
                     </h3>
                     <div className="flex flex-col gap-5">
                         <p className="text-[#171717] font-poppins text-xs font-normal">
-                            We remove the stress and guesswork from healthcare. So you always feel informed, supported, and in control.
+                            Safety data sheets, usage protocols, and training guides included so teams can onboard quickly and stay audit-ready.
                         </p>
-                        <Link href="#" className="underline text-xs">
-                            More Information
+                        <Link href="/aboutus" className="underline text-xs">
+                            Download docs
                         </Link>
                     </div>
                 </motion.div>
@@ -138,14 +138,14 @@ export default function HealthTracking() {
                     className="w-full h-85 bg-[#FFE4CF] rounded-3xl flex flex-col p-5 justify-between mx-auto"
                 >
                     <h3 className="text-[#171717] font-aeonik text-2xl font-normal">
-                        Smart Health <br /> Tracking
+                        Training & support
                     </h3>
                     <div className="flex flex-col gap-5">
                         <p className="text-[#171717] font-poppins text-xs font-normal">
-                            We remove the stress and guesswork from healthcare. So you always feel informed, supported, and in control.
+                            Hygiene station layout guidance, staff refreshers, and product onboarding led by the Hygrix support team.
                         </p>
-                        <Link href="#" className="underline text-xs">
-                            More Information
+                        <Link href="/contactus" className="underline text-xs">
+                            Talk to specialists
                         </Link>
                     </div>
                 </motion.div>

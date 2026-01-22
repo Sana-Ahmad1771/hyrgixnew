@@ -48,13 +48,13 @@ export default function HealthServices() {
                                         className="text-white font-aeonik text-3xl sm:text-4xl md:text-5xl font-normal leading-tight"
                                         variants={fadeUp}
                                     >
-                                        Healthcare Services <br /> Tailored to Your Needs
+                                        Hygiene solutions <br /> tailored to every facility
                                     </motion.h3>
                                     <motion.p 
                                         className="mt-4 text-white font-poppins text-sm sm:text-base md:text-lg font-normal leading-relaxed max-w-xl"
                                         variants={fadeUp}
                                     >
-                                        We remove the stress and guesswork from healthcare, so you always feel informed, supported, and in control.
+                                        Hygrix supplies infection-control essentials—from IPA sprays and wipes to touchless dispensers, PPE, and surface cleaners—supported by training, SOPs, and dependable local logistics.
                                     </motion.p>
                                 </div>
                             </motion.div>

@@ -28,6 +28,26 @@ export default function ProductsPage() {
     const products = data.products
     const categories = data.categories
 
+    // Breadcrumb Schema
+    const breadcrumbSchema = {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://www.hygrix.com"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Products",
+                "item": "https://www.hygrix.com/products"
+            }
+        ]
+    };
+
     // Handle loading state when category changes
     useEffect(() => {
         let mounted = true
@@ -72,6 +92,12 @@ export default function ProductsPage() {
 
     return (
         <div className="min-h-screen pt-28 bg-gradient-to-b from-[#FCF2E5]/50 to-white">
+            {/* Structured Data */}
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+            />
+            
             <main className="pt-6 pb-20">
                 {/* Breadcrumb */}
                 <div className="mx-5 sm:mx-10 md:mx-20 lg:mx-32">

@@ -74,6 +74,67 @@ export default function ProductDetailPage({ params }) {
         .filter(p => p.category === product.category && p.id !== product.id)
         .slice(0, 4)
 
+    // Product Schema
+    const productSchema = {
+        "@context": "https://schema.org",
+        "@type": "Product",
+        "name": product.name,
+        "description": product.description || `Professional ${product.name} for infection control and spill management.`,
+        "image": product.image || "https://www.hygrix.com/product-default.jpg",
+        "brand": {
+            "@type": "Brand",
+            "name": "Hygrix"
+        },
+        "manufacturer": {
+            "@type": "Organization",
+            "name": "Hygrix"
+        },
+        "sku": product.partNumber || `HYGRIX-${product.id}`,
+        "category": product.category,
+        "offers": {
+            "@type": "Offer",
+            "url": `https://www.hygrix.com/products/${id}`,
+            "priceCurrency": "USD",
+            "availability": "https://schema.org/InStock",
+            "seller": {
+                "@type": "Organization",
+                "name": "Hygrix"
+            }
+        }
+    };
+
+    // Breadcrumb Schema
+    const breadcrumbSchema = {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://www.hygrix.com"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Products",
+                "item": "https://www.hygrix.com/products"
+            },
+            {
+                "@type": "ListItem",
+                "position": 3,
+                "name": product.category,
+                "item": `https://www.hygrix.com/products?category=${product.category}`
+            },
+            {
+                "@type": "ListItem",
+                "position": 4,
+                "name": product.name,
+                "item": `https://www.hygrix.com/products/${id}`
+            }
+        ]
+    };
+
     const tabs = [
         { 
             id: "features", 
@@ -94,6 +155,16 @@ export default function ProductDetailPage({ params }) {
 
     return (
         <div className="min-h-screen pt-28 bg-gradient-to-b from-[#FCF2E5]/50 to-white">
+            {/* Structured Data */}
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(productSchema) }}
+            />
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+            />
+            
             <main className="pt-6 pb-20">
                 {/* Breadcrumb */}
                 <div className="mx-5 sm:mx-10 md:mx-20 lg:mx-32 mb-8">

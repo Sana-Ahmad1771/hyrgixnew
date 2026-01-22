@@ -24,6 +24,26 @@ export default function BlogsPage() {
     const blogs = data.blogs
     const categories = data.blogCategories
 
+    // Breadcrumb Schema
+    const breadcrumbSchema = {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://www.hygrix.com"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Blog",
+                "item": "https://www.hygrix.com/blogs"
+            }
+        ]
+    };
+
     // Simulate loading state for premium feel
     useEffect(() => {
         const timer = setTimeout(() => setIsLoading(false), 800)
@@ -52,6 +72,12 @@ export default function BlogsPage() {
 
     return (
         <div className="min-h-screen">
+            {/* Structured Data */}
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+            />
+            
             {/* Hero Section */}
             <BlogHero />
 

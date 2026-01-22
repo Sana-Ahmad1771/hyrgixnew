@@ -1,0 +1,15 @@
+# *
+User-agent: *
+Allow: /
+
+# *
+User-agent: *
+Disallow: /api/
+Disallow: /admin/
+
+# Host
+Host: https://www.hygrix.com
+
+# Sitemaps
+Sitemap: https://www.hygrix.com/sitemap.xml
+Sitemap: https://www.hygrix.com/server-sitemap.xml

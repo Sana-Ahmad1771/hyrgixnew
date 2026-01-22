@@ -62,23 +62,29 @@ export default function Hero() {
 
                             <motion.h1 className="text-[#171717] text-center font-Aeonik text-2xl sm:text-3xl md:text-4xl font-normal px-2 transition-all duration-300"
                                 variants={fadeUp}>
-                                Healthcare, Simplified <br /> You Can Focus on Living.</motion.h1>
+                                Hygrix keeps every touchpoint protected.<br />Hospital-grade hygiene for real life.</motion.h1>
 
 
                             <motion.p className="text-gray-700 text-xs sm:text-sm md:text-base w-75 md:w-122.5 sm:w-100 px-4 sm:px-3 md:px-0 transition-all duration-300"
                                 variants={fadeUp}>
-                                We remove the stress and guesswork from healthcare, so you always feel informed, supported, and in control.
+                                Infection prevention products engineered for clinics, workplaces, schools, and homes—tested, compliant, and ready to deploy across the UAE and GCC.
                             </motion.p>
 
                             <motion.div className="flex gap-2 sm:gap-3 md:gap-4 flex-wrap justify-center transition-all duration-300"
                                 variants={fadeUp}>
-                                <motion.div className="flex items-center justify-center w-28 sm:w-30 md:w-32 h-10 sm:h-10.5 md:h-11 rounded-full bg-black shadow-[-13px_22px_12.8px_0_rgba(255,255,255,0.25)] cursor-pointer hover:bg-gray-900 transition-all duration-300"
-                                    whileHover={{ scale: 1.05 }}
-                                    whileTap={{ scale: 0.95 }}>
-                                    <span className="text-white font-medium text-xs sm:text-xs md:text-sm transition-all duration-300">Get Started</span>
-                                </motion.div>
-                                <Link href="/#products" className="flex items-center justify-center rounded-[100px] border border-[#E1E1E1] bg-white w-27 sm:w-29 md:w-37 h-11 sm:h-11 md:h-11 cursor-pointer hover:bg-gray-50 transition-all duration-300">
-                                    <span className="text-gray-900 font-medium text-xs sm:text-xs md:text-sm transition-all duration-300">See All Products</span>
+                                <Link href="/contactus">
+                                    <motion.div className="flex items-center justify-center w-32 sm:w-34 md:w-36 h-11 sm:h-11 md:h-11 rounded-full bg-black shadow-[-13px_22px_12.8px_0_rgba(255,255,255,0.25)] cursor-pointer hover:bg-gray-900 transition-all duration-300"
+                                        whileHover={{ scale: 1.05 }}
+                                        whileTap={{ scale: 0.95 }}>
+                                        <span className="text-white font-medium text-xs sm:text-xs md:text-sm transition-all duration-300">Talk to our team</span>
+                                    </motion.div>
+                                </Link>
+                                <Link href="/#products">
+                                    <motion.div className="flex items-center justify-center rounded-[100px] border border-[#E1E1E1] bg-white w-30 sm:w-32 md:w-38 h-11 sm:h-11 md:h-11 cursor-pointer hover:bg-gray-50 transition-all duration-300"
+                                        whileHover={{ scale: 1.05 }}
+                                        whileTap={{ scale: 0.95 }}>
+                                        <span className="text-gray-900 font-medium text-xs sm:text-xs md:text-sm transition-all duration-300">View the catalogue</span>
+                                    </motion.div>
                                 </Link>
                             </motion.div>
 
@@ -102,7 +108,7 @@ export default function Hero() {
                                             <Image key={i} src="/Star.png" alt="5 star rating" width={16} height={16} className="w-3 sm:w-3.5 md:w-4 h-3 sm:h-3.5 md:h-4 transition-all duration-300" />
                                         ))}
                                     </div>
-                                    <p className="text-gray-700 text-xs font-medium transition-all duration-300">Trusted by 1 Million user</p>
+                                    <p className="text-gray-700 text-xs font-medium transition-all duration-300">Trusted by healthcare teams across the GCC</p>
                                 </div>
                             </motion.div>
                         </motion.div>
