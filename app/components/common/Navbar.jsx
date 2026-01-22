@@ -1,12 +1,23 @@
 "use client"; // Required for useState in Next.js App Router
 
 import Image from "next/image"
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
   const pathname = usePathname();
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 10);
+    };
+
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    handleScroll();
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   const navLinks = [
     { name: "Home", href: "/" },
@@ -22,9 +33,18 @@ export default function Navbar() {
   };
 
   return (
-    <nav className="absolute top-0 left-0 w-full z-50">
+    <nav className={`fixed top-0 left-0 w-full z-50 transition-all duration-500 ease-in-out ${scrolled ? "backdrop-blur-sm" : ""}`}>
       <section
-        className={` bg-white shadow-[0_20px_41.1px_0_rgba(0,0,0,0.05)]  flex justify-between items-center  mx-5 md:mx-20 lg:mx-30  px-5 py-3 mt-10 z-50 relative transition-all duration-300 ${isOpen ? 'rounded-t-4xl rounded-b-none' : 'rounded-4xl'}`}>
+        className={`bg-white shadow-[0_20px_41.1px_0_rgba(0,0,0,0.05)] flex justify-between items-center z-50 relative transition-all duration-500 ease-in-out ${isOpen ? 'rounded-t-4xl rounded-b-none' : 'rounded-4xl'} ${
+          scrolled 
+            ? 'mx-5 md:mx-20 lg:mx-30 mt-4 px-4 py-2' 
+            : 'mx-5 md:mx-20 lg:mx-30 mt-10 px-5 py-3'
+        }`}
+        style={{
+          transform: scrolled ? "scale(0.95)" : "scale(1)",
+          maxWidth: scrolled ? "calc(100% - 4rem)" : "100%",
+        }}
+      >
 
         {/* Logo Section */}
         <Link href="/" className="flex rounded-4xl items-center justify-center w-30 h-12 bg-[#F37303]">
@@ -75,10 +95,14 @@ export default function Navbar() {
       </section>
 
       {/* Mobile Menu Overlay */}
-      <div className={`
-        lg:hidden absolute top-full left-0 right-0 mx-5 md:mx-20 lg:mx-30  bg-white shadow-xl overflow-hidden transition-all duration-300 ease-in-out z-40
-        ${isOpen ? "max-h-96 opacity-100 rounded-b-4xl" : "max-h-0 opacity-0"}
-      `}>
+      <div 
+        className={`lg:hidden absolute top-full left-0 right-0 bg-white shadow-xl overflow-hidden transition-all duration-300 ease-in-out z-40 ${
+          isOpen ? "max-h-96 opacity-100 rounded-b-4xl" : "max-h-0 opacity-0"
+        }`}
+        style={{
+          marginInline: scrolled ? "1.25rem" : "1.25rem",
+        }}
+      >
         <div className="flex flex-col p-6 gap-4 items-center">
           {navLinks.map((link) => (
             <Link
