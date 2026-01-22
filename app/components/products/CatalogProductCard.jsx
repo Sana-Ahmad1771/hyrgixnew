@@ -13,10 +13,10 @@ const cardVariant = {
 }
 
 export default function CatalogProductCard({ product }) {
-    const { id, image, name, quantity, shortDescription, category } = product
+    const { id, slug, image, name, quantity, shortDescription, category } = product
 
     return (
-        <Link href={`/products/${id}`}>
+        <Link href={`/products/${slug}`}>
             <motion.div 
                 className="bg-[#FBFBFB] p-4 sm:p-5 flex flex-col gap-4 rounded-xl shadow-sm hover:shadow-lg transition-all duration-300 cursor-pointer h-full border border-transparent hover:border-[#F37303]/20"
                 variants={cardVariant}

@@ -10,9 +10,9 @@ const cardVariant = {
         transition: { duration: 0.6, ease: "easeOut" },
     },
 }
-export default function ProductCard({ id, image, name, quantity }) {
+export default function ProductCard({ id, slug, image, name, quantity }) {
     return (
-        <Link href={`/products/${id}`}>
+        <Link href={`/products/${slug}`}>
             <motion.div className="bg-[#FBFBFB] p-5 flex flex-col gap-5 rounded-lg shadow-sm cursor-pointer"
             variants={cardVariant}
             whileHover={{scale:1.05}}

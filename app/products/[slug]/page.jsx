@@ -59,9 +59,9 @@ function ProductTabs({ activeTab, setActiveTab, tabs }) {
 }
 
 export default function ProductDetailPage({ params }) {
-    const { id } = use(params)
+    const { slug } = use(params)
     const products = data.products
-    const product = products.find(p => p.id === parseInt(id))
+    const product = products.find(p => p.slug === slug)
     const [activeTab, setActiveTab] = useState("features")
     const [selectedImageIndex, setSelectedImageIndex] = useState(0)
 
@@ -71,7 +71,7 @@ export default function ProductDetailPage({ params }) {
 
     // Get related products (same category, excluding current product)
     const relatedProducts = products
-        .filter(p => p.category === product.category && p.id !== product.id)
+        .filter(p => p.category === product.category && p.slug !== product.slug)
         .slice(0, 4)
 
     // Product Schema
@@ -93,7 +93,7 @@ export default function ProductDetailPage({ params }) {
         "category": product.category,
         "offers": {
             "@type": "Offer",
-            "url": `https://www.hygrix.com/products/${id}`,
+            "url": `https://www.hygrix.com/products/${slug}`,
             "priceCurrency": "USD",
             "availability": "https://schema.org/InStock",
             "seller": {
@@ -130,7 +130,7 @@ export default function ProductDetailPage({ params }) {
                 "@type": "ListItem",
                 "position": 4,
                 "name": product.name,
-                "item": `https://www.hygrix.com/products/${id}`
+                "item": `https://www.hygrix.com/products/${slug}`
             }
         ]
     };
@@ -339,9 +339,9 @@ export default function ProductDetailPage({ params }) {
                                     variants={fadeUp}
                                 >
                                     {[
-                                        { icon: "🛡️", label: "Quality Assured" },
-                                        { icon: "✨", label: "Premium Grade" },
-                                        { icon: "🌿", label: "Safe Formula" },
+                                        { icon: "✅", label: "Quality Assured" },
+                                        { icon: "⭐", label: "Premium Grade" },
+                                        { icon: "🧪", label: "Safe Formula" },
                                     ].map((badge, idx) => (
                                         <motion.div
                                             key={badge.label}
@@ -350,7 +350,7 @@ export default function ProductDetailPage({ params }) {
                                             animate={{ opacity: 1, y: 0 }}
                                             transition={{ delay: 0.5 + idx * 0.1 }}
                                         >
-                                            <span>{badge.icon}</span>
+                                            <span aria-hidden="true" className="text-base">{badge.icon}</span>
                                             <span className="text-[#F37303] font-poppins text-xs font-medium">
                                                 {badge.label}
                                             </span>
@@ -438,8 +438,10 @@ export default function ProductDetailPage({ params }) {
                                                 className="p-6 bg-gradient-to-br from-[#FFF5EB] to-[#FCF2E5] rounded-xl"
                                             >
                                                 <h4 className="text-[#171717] font-aeonik text-lg font-medium mb-4 flex items-center gap-2">
-                                                    <span className="text-2xl">📋</span>
-                                                    Usage Instructions
+                                                    <svg className="w-5 h-5 text-[#F37303]" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+                                                    </svg>
+                                                    <span>Usage Instructions</span>
                                                 </h4>
                                                 <ol className="space-y-3">
                                                     {[

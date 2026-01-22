@@ -63,6 +63,7 @@ export default function Products() {
           <motion.div key={product.id} variants={fadeUp}>
             <ProductCard
               id={product.id}
+              slug={product.slug}
               image={product.image}
               name={product.name}
               quantity={product.quantity}

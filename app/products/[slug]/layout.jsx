@@ -1,8 +1,8 @@
 import data from "../../components/data/data.json";
 
 export async function generateMetadata({ params }) {
-  const { id } = params;
-  const product = data.products.find(p => p.id === parseInt(id));
+  const { slug } = await params;
+  const product = data.products.find(p => p.slug === slug);
 
   if (!product) {
     return {
@@ -23,9 +23,9 @@ export async function generateMetadata({ params }) {
     openGraph: {
       title: `${product.name} - Professional Infection Control Solution`,
       description: `${product.name}: ${description}`,
-      url: `https://www.hygrix.com/products/${id}`,
+      url: `https://www.hygrix.com/products/${slug}`,
       siteName: "Hygrix",
-      type: "product",
+      type: "website",
       locale: "en_US",
       images: [
         {
@@ -49,7 +49,7 @@ export async function generateMetadata({ params }) {
       follow: true,
     },
     alternates: {
-      canonical: `https://www.hygrix.com/products/${id}`,
+      canonical: `https://www.hygrix.com/products/${slug}`,
     },
   };
 }

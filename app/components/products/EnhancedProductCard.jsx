@@ -4,10 +4,10 @@ import Link from "next/link"
 import { motion } from "motion/react"
 
 export default function EnhancedProductCard({ product, index = 0 }) {
-    const { id, image, name, quantity, shortDescription, category, features } = product
+    const { id, slug, image, name, quantity, shortDescription, category, features } = product
 
     return (
-        <Link href={`/products/${id}`} className="block h-full">
+        <Link href={`/products/${slug}`} className="block h-full">
             <motion.article 
                 className="group relative bg-white rounded-2xl overflow-hidden h-full border border-[#F0F0F0] hover:border-[#F37303]/30 transition-all duration-500 hover:shadow-xl hover:shadow-[#F37303]/10"
                 initial={{ opacity: 0, y: 30 }}

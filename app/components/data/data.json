@@ -2,6 +2,7 @@
    "products": [
       {
          "id": 1,
+         "slug": "hygrix-ipa-spray",
          "image": "/product.png",
          "quantity": "500ml Bottle",
          "name": "Hygrix IPA Spray",
@@ -24,6 +25,7 @@
       },
       {
          "id": 2,
+         "slug": "hygrix-hand-sanitizer-gel",
          "image": "/product.png",
          "quantity": "250ml Bottle",
          "name": "Hygrix Hand Sanitizer Gel",
@@ -46,6 +48,7 @@
       },
       {
          "id": 3,
+         "slug": "hygrix-disinfectant-wipes",
          "image": "/product.png",
          "quantity": "100 Wipes Pack",
          "name": "Hygrix Disinfectant Wipes",
@@ -68,6 +71,7 @@
       },
       {
          "id": 4,
+         "slug": "hygrix-surface-cleaner",
          "image": "/product.png",
          "quantity": "1 Liter Bottle",
          "name": "Hygrix Surface Cleaner",
@@ -90,6 +94,7 @@
       },
       {
          "id": 5,
+         "slug": "hygrix-3-ply-face-masks",
          "image": "/product.png",
          "quantity": "Box of 50",
          "name": "Hygrix 3-Ply Face Masks",
@@ -112,6 +117,7 @@
       },
       {
          "id": 6,
+         "slug": "hygrix-pocket-sanitizer",
          "image": "/product.png",
          "quantity": "50ml Spray",
          "name": "Hygrix Pocket Sanitizer",
@@ -134,6 +140,7 @@
       },
       {
          "id": 7,
+         "slug": "hygrix-nitrile-gloves",
          "image": "/product.png",
          "quantity": "Pair",
          "name": "Hygrix Nitrile Gloves",
@@ -156,6 +163,7 @@
       },
       {
          "id": 8,
+         "slug": "hygrix-floor-disinfectant",
          "image": "/product.png",
          "quantity": "5 Liter Canister",
          "name": "Hygrix Floor Disinfectant",
@@ -178,6 +186,7 @@
       },
       {
          "id": 9,
+         "slug": "hygrix-baby-wipes",
          "image": "/product.png",
          "quantity": "30 Wipes Pack",
          "name": "Hygrix Baby Wipes",
@@ -200,6 +209,7 @@
       },
       {
          "id": 10,
+         "slug": "hygrix-touchless-dispenser",
          "image": "/product.png",
          "quantity": "Auto Dispenser",
          "name": "Hygrix Touchless Dispenser",
@@ -222,6 +232,7 @@
       },
       {
          "id": 11,
+         "slug": "hygrix-foaming-hand-wash",
          "image": "/product.png",
          "quantity": "200ml Foam",
          "name": "Hygrix Foaming Hand Wash",
@@ -244,6 +255,7 @@
       },
       {
          "id": 12,
+         "slug": "hygrix-first-aid-kit",
          "image": "/product.png",
          "quantity": "Kit",
          "name": "Hygrix First Aid Kit",

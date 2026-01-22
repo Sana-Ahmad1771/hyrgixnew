@@ -71,7 +71,7 @@ export default async function sitemap() {
 
   // Dynamic product pages
   const productPages = data.products.map((product) => ({
-    url: `${baseUrl}/products/${product.id}`,
+    url: `${baseUrl}/products/${product.slug}`,
     lastModified: currentDate,
     changeFrequency: 'weekly',
     priority: 0.8,
