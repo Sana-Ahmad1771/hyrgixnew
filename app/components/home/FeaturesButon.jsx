@@ -13,7 +13,7 @@ export default function Button() {
       whileTap={{ scale: 0.95 }}
     >
       <motion.span
-        className="w-1.5 h-1.5 bg-[#F37303] rounded-full"
+        className="w-1.5 h-1.5 bg-primary rounded-full"
         animate={{ scale: [1, 1.3, 1] }}
         transition={{
           repeat: Infinity,
@@ -22,7 +22,7 @@ export default function Button() {
         }}
       />
 
-      <span className="text-[#171717] text-center font-poppins text-base font-normal">
+      <span className="text-black text-center font-poppins text-base font-normal">
         Features
       </span>
     </motion.div>

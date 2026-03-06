@@ -1,11 +1,38 @@
 @import "tailwindcss";
 
 :root {
+  --primary: #f37303;
+  --secondary: #dcd5ff;
+  --primary-light: #ffe4cf;
+  --secondary-light: #FFF8F2;
+  --dark-secondary: #8974eb66;
+  --dark-primary: #8974eb00;
+  --black: #171717;
+  --dark-black: #191919;
+  --light-black: #333333;
+  --white: #ffffff;
+  --neutral-50: #fafafa;
+  --neutral-light: #e6e6e6;
+  --border:#E5E5E5;
   --background: #ffffff;
   --foreground: #171717;
 }
 
 @theme inline {
+  --color-primary: #f37303;
+  --color-secondary: #dcd5ff;
+  --color-primary-light: #ffe4cf;
+  --color-secondary-light: #FFF8F2;
+  --color-border:#E5E5E5;
+  --color-dark-secondary: #8974eb66;
+  --color-dark-primary: #8974eb00;
+  --color-black: #171717;
+  --color-dark-black: #191919;
+  --color-light-black: #333333;
+  --color-white: #ffffff;
+  --color-neutral-50: #fafafa;
+  --color-neutral-light: #e6e6e6;
+
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
@@ -15,11 +42,15 @@
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif,"Olympia";
+  font-family: Arial, Helvetica, sans-serif, "Olympia";
 }
 @keyframes marquee {
-  0% { transform: translateX(0%); }
-  100% { transform: translateX(-50%); }
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
 }
 
 .animate-marquee {
@@ -52,7 +83,6 @@ body {
   font-weight: normal;
   font-style: normal;
 }
-
 
 @layer base {
   .font-aeonik {

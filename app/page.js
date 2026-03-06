@@ -4,9 +4,10 @@ import HealthTracking from "./components/home/HealthTracking";
 import RedefineHealthCare from "./components/home/RedefineHealthCare";
 import Journey from "./components/home/Journey";
 import Products from "./components/home/Products";
-import Reviews from "./components/home/Reviews";
 import Banner from "./components/common/Banner";
 import Who from "./components/about/Who";
+import Hero2 from "./components/home/Hero2";
+import ReviewsCards from "./components/home/ReviewsCard";
 
 export const metadata = {
   title: "Hygrix - Advanced Infection Control & Spill Solutions",
@@ -109,13 +110,14 @@ export default function Home(){
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
       
-      <Hero />
+      {/* <Hero /> */}
+      <Hero2 />
       <Brands />
       <HealthTracking />
       <RedefineHealthCare />
       <Journey />
       <Products />
-      <Reviews />
+      <ReviewsCards />
       <Banner />
     </>
   )

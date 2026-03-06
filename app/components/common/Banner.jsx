@@ -1,27 +1,21 @@
-"use client"
+"use client";
 
-import Image from "next/image"
-import { motion } from "motion/react"
-
+import Image from "next/image";
+import { motion } from "motion/react";
+import { ArrowRight } from "lucide-react";
+import Link from "next/link";
 const fadeUp = {
   hidden: { opacity: 0, y: 30 },
   visible: { opacity: 1, y: 0, transition: { duration: 0.8, ease: "easeOut" } },
-}
+};
 
 export default function Banner() {
   return (
     <section className="relative bg-white overflow-hidden rounded-2xl sm:rounded-3xl">
-
       {/* Top wave background */}
       <div className="absolute top-0 left-0 w-full h-17.5 sm:h-20 md:h-20 lg:h-25 z-0">
-        <Image
-          src="/bannerbg2.png"
-          alt="banner background"
-          fill
-          className=""
-        />
+        <Image src="/bannerbg2.png" alt="banner background" fill className="" />
       </div>
-
 
       {/* Main content */}
       <div className="relative flex items-center justify-center px-4 sm:px-6 py-16 sm:py-20 md:py-24 lg:py-28 mx-4 sm:mx-8 md:mx-16 lg:mx-28 xl:mx-32 ">
@@ -30,10 +24,12 @@ export default function Banner() {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: false, amount: 0.3 }}
-          variants={{ visible: { transition: { staggerChildren: 0.2 } } }}>
+          variants={{ visible: { transition: { staggerChildren: 0.2 } } }}
+        >
           <motion.h2
             className="text-[#171717] font-aeonik text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-normal leading-snug max-w-4xl"
-            variants={fadeUp} >
+            variants={fadeUp}
+          >
             Hygrix keeps your spaces safe <br className="hidden sm:block" />
             with hospital-grade hygiene solutions.
           </motion.h2>
@@ -42,10 +38,79 @@ export default function Banner() {
             className="text-[#171717] font-poppins text-sm sm:text-base md:text-lg lg:text-lg font-normal leading-relaxed max-w-3xl"
             variants={fadeUp}
           >
-            From IPA sprays and disinfectant wipes to touchless dispensers and PPE, our catalogue is engineered for infection prevention in clinics, workplaces, schools, and public venues.
+            From IPA sprays and disinfectant wipes to touchless dispensers and
+            PPE, our catalogue is engineered for infection prevention in
+            clinics, workplaces, schools, and public venues.
           </motion.p>
-
+          {/* --- FIXED EXPANDING BUTTON --- */}
           <motion.div
+            initial="initial"
+            whileHover="hover"
+            animate="initial"
+            
+            className="relative inline-block mt-3"
+          >
+            <Link
+              href="/#products"
+              className="relative flex items-center bg-black h-[50px] pl-[6px] pr-8 rounded-full overflow-hidden shadow-md border border-black/5"
+            >
+              {/* The Orange Circle: Forced expansion via variants */}
+              <motion.div
+                className="absolute left-[6px] h-[40px] bg-primary rounded-full z-0"
+                variants={{
+                  initial: { width: 40 },
+                  hover: { width: "calc(100% - 12px)" },
+                }}
+                transition={{ type: "spring", stiffness: 200, damping: 25 }}
+              />
+
+              {/* Icon container with sliding arrows */}
+              <div className="relative z-10 w-[40px] h-[40px] flex items-center justify-center overflow-hidden">
+                <motion.div
+                  variants={{
+                    initial: { x: 0 },
+                    hover: { x: 40 },
+                  }}
+                  transition={{ duration: 0.4, ease: "easeInOut" }}
+                >
+                  <ArrowRight className="w-5 h-5 text-white" />
+                </motion.div>
+
+                <motion.div
+                  className="absolute"
+                  variants={{
+                    initial: { x: -40 },
+                    hover: { x: 0 },
+                  }}
+                  transition={{ duration: 0.4, ease: "easeInOut" }}
+                >
+                  <ArrowRight className="w-5 h-5 text-white" />
+                </motion.div>
+              </div>
+              {/* Text container with color and position swap */}
+              <div className="relative z-10 ml-3 h-[20px] overflow-hidden">
+                <motion.div
+                  className="flex flex-col"
+                  variants={{
+                    initial: { y: 0 },
+                    hover: { y: -20 }, // Moves up exactly the height of one span
+                  }}
+                  transition={{ duration: 0.4, ease: "easeInOut" }}
+                >
+                  {/* First Span: Black (Visible by default) */}
+                  <span className="h-[20px] flex items-center text-white text-sm font-bold">
+                    Explore catalogue
+                  </span>
+
+                  {/* Second Span: White (Visible on hover) */}
+                  <span className="h-[20px] flex items-center text-white text-sm font-bold">
+                    Explore catalogue
+                  </span>
+                </motion.div>
+              </div>
+            </Link>
+          </motion.div>
+          {/* <motion.div
             className="mt-3 flex items-center justify-center w-30 sm:w-32 h-10 sm:h-11 rounded-full bg-black cursor-pointer"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
@@ -54,19 +119,19 @@ export default function Banner() {
             <span className="text-white text-sm font-medium">
               Explore catalogue
             </span>
-          </motion.div>
+          </motion.div> */}
         </motion.div>
       </div>
 
       {/* Right floating image */}
       <motion.img
         src="/bannerbg.png"
-          alt="Healthcare illustration with medical elements"
+        alt="Healthcare illustration with medical elements"
         className="absolute -right-16 sm:-right-10 md:right-20 bottom-6 sm:bottom-10 w-40 sm:w-50 md:w-56 lg:w-64 h-auto"
         initial={{ y: 0 }}
         animate={{ y: [0, -30, 0] }}
         transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
       />
     </section>
-  )
+  );
 }

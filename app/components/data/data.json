@@ -3,46 +3,51 @@
       {
          "id": 1,
          "slug": "hygrix-absorbency-granules",
-         "image": "/product.png",
+         "image": "/images/products/Hygrix-Absorbency-Granules.png",
          "quantity": "200g / 75g",
          "name": "Hygrix Absorbency Granules",
          "category": "Absorbents",
+         "partNumber": "HAG2000 / HAG1075",
          "shortDescription": "High-absorbency granules for biohazard spill containment and odour control.",
-         "description": "Hygrix Absorbency Granules are designed for rapid containment and removal of biohazards such as urine and vomit. Mildly perfumed to neutralise unpleasant odours, they are suitable for use on hard and soft surfaces, bedpans, vomit bowls and urine bottles, and can secure liquid clinical waste for safe transportation.",
+         "description": "Hygrix Absorbency Granules are designed for rapid containment and removal of biohazards such as urine and vomit. Each shaker contains 200g (HAG2000) or 75g (HAG1075) of granules capable of absorbing up to 20 litres of liquid. Mildly perfumed to neutralise unpleasant odours, they are suitable for use on hard and soft surfaces, bedpans, vomit bowls, urine bottles, and can secure liquid clinical waste for safe transportation.",
          "features": [
-            "High absorbency for rapid spill control",
+            "High absorbency capacity—up to 20L per shaker",
             "Mild perfume to neutralise odours",
             "Suitable for hard and soft surfaces",
             "Ideal for bedpans, vomit bowls and urine bottles",
-            "Supports safe transport of liquid clinical waste"
+            "Supports safe transport of liquid clinical waste",
+            "Convenient shaker bottle"
          ],
          "specifications": {
             "Part Numbers": "HAG2000 (200g), HAG1075 (75g)",
             "Absorbency": "Up to 20L liquid per shaker",
             "Use Cases": "Urine and vomit spills, clinical waste transport",
-            "Fragrance": "Mildly perfumed"
+            "Fragrance": "Mildly perfumed",
+            "Surfaces": "Hard and soft surfaces, bedpans, vomit bowls"
          }
       },
       {
          "id": 2,
          "slug": "hygrix-biohazard-spill-kit-max",
-         "image": "/product.png",
+         "image": "/images/products/Hygrix-Biohazard-Spill-Kit-Max.png",
          "quantity": "All-In-One Kit",
          "name": "Hygrix Biohazard Spill Kit Max",
          "category": "Spill Kits",
          "partNumber": "HBSK1001",
          "shortDescription": "All-in-one biohazard spill kit with neutralising sorbent and chlorine tablets.",
-         "description": "The Hygrix Biohazard All-In-One Spill Kit Max uses advanced sorbent technology to contain spills including blood, saliva, urine and vomit. The non-hazardous sorbent neutralises acids, amines and odours, and the kit includes Hygrix CL tablets to disinfect contaminated surfaces. Sustainably designed with a cardboard scoop/scraper and biopolymer applicator.",
+         "description": "The Hygrix Biohazard All-In-One Spill Kit Max uses advanced sorbent technology to contain spills including blood, saliva, urine and vomit. The non-hazardous sorbent neutralises acids, amines and odours, and includes Hygrix CL tablets to disinfect contaminated surfaces. Sustainably designed with cardboard scoop/scraper and biopolymer applicator made from renewable resources.",
          "features": [
             "Neutralising sorbent for versatile spill containment",
-            "Includes CL tablets for surface disinfection",
+            "Contains 4× Hygrix CL tablets for surface disinfection",
             "Non-hazardous, sustainable components",
+            "Cardboard scoop and biopolymer applicator",
             "Swift, hassle-free spill decontamination",
-            "Hard case with wall mount and poster"
+            "Hard case with wall mount and poster",
+            "Reduces plastic waste"
          ],
          "specifications": {
-            "Case": "Hard yellow case, wall mount, poster",
-            "Includes": "Nitrile gloves, apron, Multi-Purpose Sorbent Powder, dilution pot, cardboard scoop/scraper, clinical waste bags, 4 CL tablets, biopolymer applicator, illustrated instructions",
+            "Case": "Hard yellow case with wall mount and poster",
+            "Contents": "Nitrile gloves, apron, Multi-Purpose Sorbent Powder, dilution pot, cardboard scoop/scraper, 4× CL tablets, clinical waste bags, biopolymer applicator, illustrated instructions",
             "Application": "Biohazard spill containment and disinfection",
             "Part Number": "HBSK1001"
          }
@@ -50,45 +55,49 @@
       {
          "id": 3,
          "slug": "hygrix-bleach-spray",
-         "image": "/product.png",
+         "image": "/images/products/Hygrix-Bleach-Spray.png",
          "quantity": "1L Ready-to-Use",
          "name": "Hygrix Bleach Spray",
          "category": "Disinfectants",
          "partNumber": "HBS1001",
          "shortDescription": "Detergent-sanitising chlorine spray for cleaning and sporicidal disinfection.",
-         "description": "Hygrix Bleach Spray is an effective chlorine disinfectant for surface and environmental hygiene. Its dual-action detergent sanitising solution combines clean–rinse–disinfect into one process and delivers broad-spectrum efficacy including sporicidal disinfection, with proven performance on surface biofilms.",
+         "description": "Hygrix Bleach Spray is an effective chlorine disinfectant for surface and environmental hygiene. Its dual-action detergent sanitising solution combines clean–rinse–disinfect into one process with broad-spectrum efficacy including sporicidal disinfection. Advanced formulation provides proven performance on surface biofilms.",
          "features": [
             "Clean and disinfect in one step",
             "Broad-spectrum, sporicidal efficacy",
             "Effective on surface biofilms",
             "Suitable for daily, terminal, isolation and outbreak cleaning",
-            "Detergent sanitising formulation"
+            "Detergent sanitising formulation",
+            "High disinfection performance"
          ],
          "specifications": {
+            "Format": "1L Ready-to-Use Solution",
             "Suitable Surfaces": "Rooms, bays, wards; bed spaces; commodes; toilets; bathrooms; mattresses; bed frames; stainless steel; sealed floors; worktops",
-            "Format": "Ready-to-use chlorine solution",
+            "Active": "Chlorine-based disinfectant",
             "Part Number": "HBS1001"
          }
       },
       {
          "id": 4,
          "slug": "hygrix-bleach-wipes",
-         "image": "/product.png",
+         "image": "/images/products/Hygrix-Bleach-Wipes.png",
          "quantity": "90 Wipes Canister",
          "name": "Hygrix Bleach Wipes",
          "category": "Wipes",
          "partNumber": "HBW1200",
          "shortDescription": "Pre-soaked sporicidal wipes for hard, non-porous surfaces.",
-         "description": "Hygrix Bleach Wipes are heavily saturated, ready-to-use wipes delivering virucidal, bactericidal, fungicidal, tuberculocidal and sporicidal action with short exposure times. They eliminate the need for soaking dry wipes and provide excellent cleaning efficacy for professional environments.",
+         "description": "Hygrix Bleach Wipes are heavily saturated, ready-to-use wipes delivering virucidal, bactericidal, fungicidal, tuberculocidal and sporicidal action with short exposure times (≤3 minutes). They eliminate the need for soaking dry wipes and provide excellent cleaning efficacy for professional environments.",
          "features": [
             "Virucidal, bactericidal, fungicidal, tuberculocidal and sporicidal",
             "Short exposure time (≤3 minutes)",
             "Heavily saturated for superior cleaning",
             "Ready-to-use—no prep required",
-            "Ideal for biohazard spills (vomit & urine)"
+            "Ideal for biohazard spills (vomit & urine)",
+            "Excellent cleaning efficacy"
          ],
          "specifications": {
-            "Count": "90 large wipes",
+            "Count": "90 large, pre-soaked wipes",
+            "Canister": "Sealed to maintain saturation",
             "Exposure Time": "≤3 minutes",
             "Suitable Surfaces": "Rooms, bays, wards; commodes; toilets; bathrooms; mattresses; bed frames; stainless steel; sealed floors; worktops",
             "Part Number": "HBW1200"
@@ -97,8 +106,8 @@
       {
          "id": 5,
          "slug": "hygrix-chemical-spill-kit",
-         "image": "/product.png",
-         "quantity": "Lab Kit",
+         "image": "/images/products/Hygrix-Chemical-Spill-Kit.png",
+         "quantity": "3 Pack Kit",
          "name": "Hygrix Chemical Spill Kit",
          "category": "Spill Kits",
          "partNumber": "HCSK1001",
@@ -109,156 +118,235 @@
             "Tweezers for safe sharps pickup",
             "Full PPE included per pack",
             "Robust red case with wall bracket",
-            "Three complete spill packs"
+            "Three complete spill packs",
+            "Can be kept in accessible locations",
+            "Clear illustrated instructions"
          ],
          "specifications": {
             "Capacity": "Up to 1L per incident",
-            "Case": "Red robust case + wall mounting bracket",
-            "Each Pack": "Nitrile gloves, apron/thumb loop gown, face mask/eye shield, 2x IPA wipes, absorbent pads, tweezers, disposal bag, instructions",
+            "Case": "Robust red case + wall mounting bracket",
+            "Packs Included": "3 complete spill packs",
+            "Each Pack": "Nitrile gloves, apron/thumb loop gown, face mask/eye shield, 2× IPA wipes, absorbent pads, tweezers, disposal bag, instructions",
+            "Ideal For": "Academic labs, research labs, professional laboratories",
             "Part Number": "HCSK1001"
          }
       },
       {
          "id": 6,
          "slug": "hygrix-cl-granules",
-         "image": "/product.png",
+         "image": "/images/products/Hygrix-CL-granules.png",
          "quantity": "500g Shaker",
          "name": "Hygrix CL Granules",
          "category": "Absorbents",
          "partNumber": "HCG1001",
          "shortDescription": "Biohazard absorbent granules in shaker bottle for spill containment.",
-         "description": "Hygrix CL Granules absorb biohazardous liquid spillages (blood, saliva, CSF) to prevent spreading and enable easy disposal. Use the scoop and scrapers to collect into clinical waste bags and follow with Hygrix CL tablets at 10,000ppm to disinfect the area.",
+         "description": "Hygrix CL Granules absorb biohazardous liquid spillages (blood, saliva, cerebrospinal fluid) to prevent spreading and enable easy disposal. Use the scoop and scrapers to collect into clinical waste bags and follow with Hygrix CL tablets at 10,000ppm to disinfect the area. Designed per US CDC and NHS guidelines.",
          "features": [
             "Convenient shaker for rapid application",
             "Absorbs a range of biohazard fluids",
+            "Designed per CDC/NHS IPC guidance",
             "Supports complete spill process with CL tablets",
-            "Aligned to CDC/NHS IPC guidance",
-            "Easy disposal via clinical waste bags"
+            "Easy disposal via clinical waste bags",
+            "500ml absorbency per shaker"
          ],
          "specifications": {
             "Absorbency": "Up to 500ml per shaker",
-            "Guidance": "US CDC and NHS IPC recommendations",
-            "Process": "Absorb → collect → dispose → disinfect",
+            "Guidance": "Aligned to US CDC and NHS recommendations",
+            "Fluid Types": "Blood, saliva, cerebrospinal fluid",
+            "Process": "Absorb → collect → dispose → disinfect with CL tablets",
             "Part Number": "HCG1001"
          }
       },
       {
          "id": 7,
          "slug": "hygrix-cl-tab-tablets",
-         "image": "/product.png",
-         "quantity": "200 / 100 Tablets",
+         "image": "/images/products/Hygrix-CL-TAB-Tablets.png",
+         "quantity": "100-200 Tablets",
          "name": "Hygrix CL TAB Tablets (NaDCC)",
          "category": "Disinfectants",
          "partNumber": "BNG1233 / BNG1250 / BNG1150",
          "shortDescription": "NaDCC tablets—precursor to hypochlorous acid—for high-level disinfection.",
-         "description": "Hygrix CL TAB (NaDCC) tablets dissolve to produce hypochlorous acid, a powerful, biodegradable disinfectant suitable for high-level and outbreak disinfection including SARS-CoV-2. Stable tablet format reduces packaging waste and simplifies transportation and dosing.",
+         "description": "Hygrix CL TAB (Sodium dichloroisocyanurate, NaDCC) tablets dissolve to produce hypochlorous acid, a smart, sustainable, biodegradable disinfectant. Suitable for high-level and outbreak disinfection including SARS-CoV-2. Stable tablet format reduces packaging waste, simplifies transportation, and enables accurate dosing.",
          "features": [
-            "Accurate dosing to required ppm",
+            "Accurate dosing to required ppm concentration",
             "Biodegradable, non-toxic hypochlorous acid",
             "~100× more effective than household bleach",
-            "Stable tablet format—easy transport",
-            "Suitable for high-level/outbreak disinfection"
+            "Stable tablet format—easy transport and storage",
+            "Suitable for high-level/outbreak disinfection",
+            "Effective against resistant pathogens and spores",
+            "Reduced packaging waste vs. liquids"
          ],
          "specifications": {
             "Active": "Sodium dichloroisocyanurate (NaDCC)",
-            "Packs": "BNG1233 (3.3g, 200 tabs), BNG1250 (5.0g, 200 tabs), BNG1150 (5.0g, 100 tabs)",
-            "Standards": "BS EN 1650, 13704, 1276, 14476 (Adenovirus/Poliovirus/Enveloped), 14348, 13624, 13727, 13697; conforms to US CDC/WHO guidelines",
-            "Use": "Isolation, terminal and general environmental disinfection"
+            "Available Packs": "BNG1233 (3.3g, 1.7g NADCC, 200 tabs), BNG1250 (5.0g, 2.5g NADCC, 200 tabs), BNG1150 (5.0g, 2.5g NADCC, 100 tabs)",
+            "Certified Against": "BS EN 1650, 13704, 1276, 14476 (Adenovirus/Poliovirus/Enveloped), 14348, 13624, 13727, 13697",
+            "Conforms To": "US CDC and WHO guidelines for isolation, terminal and general environmental disinfection",
+            "Part Numbers": "BNG1233, BNG1250, BNG1150"
          }
       },
       {
          "id": 8,
          "slug": "hygrix-cytotoxic-spill-kit",
-         "image": "/product.png",
-         "quantity": "Kit",
+         "image": "/images/products/Hygrix-Cytotoxic-Spill-Kit.png",
+         "quantity": "Complete Kit",
          "name": "Hygrix Cytotoxic Spill Kit",
          "category": "Spill Kits",
          "partNumber": "HCSK2001",
          "shortDescription": "Kit to manage cytotoxic liquid and powder spills with neutralising agents and full PPE.",
-         "description": "Curated for cytotoxic spills across hospitals, laboratories and pharmacies, this kit manages liquid and powder spills. Sterile water pods and pads contain powders; Cyto absorbent granules and Cygrix powder neutralise residue. Includes full PPE, waste bags and clear instructions for safe decontamination.",
+         "description": "Curated for cytotoxic spills across hospitals, laboratories and pharmacies, this kit manages both liquid and powder spills from chemotherapeutic, cytotoxic and cytostatic drugs. Sterile water pods and pads contain powders; Cyto absorbent granules and Cygrix powder neutralise residue. Includes full PPE, waste bags and clear instructions.",
          "features": [
             "Handles cytotoxic liquids and powders",
             "Cygrix powder neutralises residue",
-            "Comprehensive PPE packs (FFP3, visor, gowns)",
+            "Comprehensive PPE packs with FFP3 masks",
+            "Sterile water pods for powder containment",
+            "LP sorbent powder for liquid absorption",
             "Clear instruction sheet and record card",
-            "Safe waste containment and disposal"
+            "Safe waste containment and disposal bags"
          ],
          "specifications": {
-            "PPE": "2× packs each: gloves, thumb loop gown, FFP3 mask, eye visor, oversleeves, overshoes",
-            "Liquid Clean-up": "LP sorbent powder, scoop/scraper, tweezers",
-            "Powder Clean-up": "Sterile water pods, absorbent pads",
-            "Decontamination": "Cygrix Powder 10g sachets, 250ml diluter, paper towels",
-            "Waste": "Cytotoxic waste bags, ties, warning sign, record card",
+            "PPE": "2× packs each: 3× pairs gloves, 3× thumb loop gown, 3× FFP3 mask, 3× eye visor, 3× oversleeves, 3× overshoes, 1× kneeling pad",
+            "Powder Clean-up": "3× sterile water pods, 3× absorbent pads",
+            "Liquid Clean-up": "3× LP sorbent powder sachets, scoop/scraper, tweezers",
+            "Decontamination": "3× Cygrix Powder 10g sachets, 250ml diluter, paper towels",
+            "Waste": "3× cytotoxic waste bags, ties, warning sign, record card",
+            "Suitable For": "Hospitals, laboratories, pharmacies, research facilities",
             "Part Number": "HCSK2001"
          }
       },
       {
          "id": 9,
          "slug": "hygrix-neutralising-spray",
-         "image": "/product.png",
-         "quantity": "250mL RTU",
+         "image": "/images/products/Hygrix-Neutralising-Spray.png",
+         "quantity": "250mL RTU / 5L Refill",
          "name": "Hygrix Neutralising Spray",
-         "category": "Sprays",
+         "category": "Disinfectants",
          "partNumber": "HNS1250",
-         "shortDescription": "Odour-neutralising spray for soft and hard surfaces and textiles.",
-         "description": "Neutralises odours where urine or vomit spills have occurred. Cleans while removing odours using organic, non-toxic, hypoallergenic and biodegradable ingredients. Delivered with a new fine-mist trigger; available in 250mL bottles and 5L refills.",
+         "shortDescription": "Organic odour neutraliser for soft and hard surfaces.",
+         "description": "Hygrix Neutralising Spray neutralises odours on soft and hard surfaces and textiles. Using organic, non-toxic and hypoallergenic ingredients, it truly kills odours rather than masking them. Lightly fragranced, biodegradable, and available with an improved trigger for fine mist application.",
          "features": [
-            "Truly kills odours—not masking",
-            "Effective on soft/hard surfaces and textiles",
-            "Lightly fragranced, hypoallergenic",
-            "Biodegradable, non-toxic ingredients",
-            "Fine mist trigger for even coverage"
+            "Truly kills odours—doesn't just mask them",
+            "Effective on pet odours",
+            "Organic, non-toxic, hypoallergenic ingredients",
+            "Biodegradable formulation",
+            "Improved trigger for fine mist",
+            "Works on hard and soft surfaces, textiles",
+            "Lightly fragranced"
          ],
          "specifications": {
-            "Sizes": "250mL RTU, 5L refill",
-            "Use": "Worktops, sealed floors, textiles",
+            "Available Sizes": "250mL Ready-to-Use Solution, 5L Refill Bottles",
+            "Ingredients": "Organic, non-toxic, hypoallergenic",
+            "Use Cases": "Surfaces or textiles after urine/vomit spills",
+            "Suitable For": "Worktops, hard surfaces, soft textiles",
             "Part Number": "HNS1250"
          }
       },
       {
          "id": 10,
          "slug": "hygrix-urine-vomit-spill-kit",
-         "image": "/product.png",
-         "quantity": "Refillable Hard Case",
+         "image": "/images/products/Hygrix-Urine-Vomit-Spill-Kit.png",
+         "quantity": "Multi-use Kit",
          "name": "Hygrix Urine & Vomit Spill Kit",
          "category": "Spill Kits",
          "partNumber": "HUSK1001",
-         "shortDescription": "Kit to clear and contain up to 6 urine/vomit spills with granules, neutraliser and PPE.",
-         "description": "Contains high-absorbency granules, neutralising spray, gloves, disinfectant wipes, scoops and clinical waste bags to rapidly collect and dispose spills with minimal contact. Includes instructional poster and wall bracket in a refillable hard case.",
+         "shortDescription": "Reusable kit for clearing and containing up to 6 urine and vomit spills.",
+         "description": "The Urine & Vomit Spill Kit clears and contains up to 6 spills with high absorbency granules and ready-to-use neutralising spray. Quick collection with minimal contact using scoops, rapid disinfection with surface wipes, and safe disposal in clinical waste bags. Includes easy-to-follow instruction guide and wall bracket.",
          "features": [
-            "High-absorbency granules",
-            "Ready-to-use neutralising spray",
-            "Disinfectant surface wipes",
-            "Nitrile gloves and aprons",
-            "Wall bracket and refillable hard case"
+            "Contains up to 6 complete spill incidents",
+            "High absorbency granules for rapid containment",
+            "Ready-to-use neutralising spray included",
+            "6× pairs of nitrile gloves",
+            "6× packs of disinfectant surface wipes",
+            "6× cardboard scoops and scrapers",
+            "Refillable hard case with wall bracket",
+            "Illustrated instruction poster"
          ],
          "specifications": {
-            "Contents": "200g granules shaker, 250ml neutraliser spray, 6× nitrile gloves, 6× disinfectant wipe packs, 6× cardboard scoops/scrapers, 6× clinical waste bags, 6× aprons, poster, wall bracket, refillable hard case",
             "Capacity": "Up to 6 spills",
+            "Contents": "1× 200g shaker Hygrix High Absorbency Granules, 1× 250ml Hygrix Neutraliser Spray, 6× pairs nitrile gloves, 6× packs disinfectant wipes, 6× cardboard scoops/scrapers, 6× clinical waste bags, 6× aprons, instructional poster, wall bracket, refillable hard case",
+            "Use Cases": "Healthcare, schools, workplaces, public facilities",
+            "Instructions": "Comprehensive videos and posters included",
             "Part Number": "HUSK1001"
          }
       },
       {
          "id": 11,
          "slug": "hygrix-urine-vomit-spill-pack",
-         "image": "/product.png",
+         "image": "/images/products/Hygrix-Urine-Vomit-Spill-Pack.png",
          "quantity": "Single Use Pack",
          "name": "Hygrix Urine & Vomit Spill Pack",
-         "category": "Spill Packs",
+         "category": "Spill Kits",
          "partNumber": "HUP1001",
-         "shortDescription": "Single-use pack for rapid urine/vomit spill containment and disinfection.",
-         "description": "A single-use pack including sorbent powder, scoop/scraper and disinfectant surface wipes to quickly collect and disinfect spills with minimal contact. Packed in one bag with clearly illustrated instructions for use across all industries.",
+         "shortDescription": "Single-use spill pack with granules, wipes and waste bag.",
+         "description": "Single-use Urine & Vomit Spill Pack includes all necessary equipment in one bag for quick spill containment and disinfection. High absorbency granules coagulate spills for rapid collection with minimal contact. Disinfectant wipes follow-up cleaning to reduce infection risk. Clear instructions on pack make it suitable for all industries.",
          "features": [
-            "Life Protected sorbent powder",
-            "Cardboard scoop and scraper",
-            "Disinfectant surface wipes",
-            "Clinical waste bag",
+            "Single-use convenience",
+            "Complete equipment in one bag",
+            "Life Protected Sorbent Powder for rapid absorption",
+            "2× packs of disinfectant surface wipes",
+            "Rapid collection with minimal contact",
+            "1× pair nitrile gloves",
+            "1× apron included",
             "Illustrated instructions on pack"
          ],
          "specifications": {
-            "Contents": "Nitrile gloves, apron, sorbent powder sachet, cardboard scoop/scraper, 2× disinfectant wipe packs, clinical waste bag, instructions",
-            "Use": "Rapid single-incident clean-up",
+            "Contents": "1× pair nitrile gloves, 1× apron, 1× sachet Life Protected Sorbent Powder, 1× cardboard scoop/scraper, 2× packs disinfectant surface wipes, 1× clinical waste bag, illustrated instructions",
+            "Suitable For": "All industries—healthcare, schools, facilities",
+            "Instructions": "Clear, illustrated guide with comprehensive video support",
             "Part Number": "HUP1001"
+         }
+      },
+      {
+         "id": 12,
+         "slug": "hygrix-dual-action-tablets",
+         "image": "/images/products/Hygrix-Dual-Action-Tablets.png",
+         "quantity": "100-200 Tablets",
+         "name": "Hygrix Dual Action Tablets",
+         "category": "Disinfectants",
+         "partNumber": "HDA1233 / HDA2233",
+         "shortDescription": "NaDCC tablets combining detergent and disinfectant action in one step.",
+         "description": "Hygrix Dual Action Tablets (NaDCC) pair high anti-microbial action with compatible detergent to clean and disinfect in one simple step. Dissolve to formulate correct concentration every time, eliminating guess work and user error. Stable tablet format reduces packaging waste and enables sustainable, hassle-free cleaning and disinfection.",
+         "features": [
+            "Clean and disinfect in one step",
+            "Compatible detergent formulation",
+            "Accurate dosing to concentration",
+            "Stable tablet format—easy transport",
+            "Reduced packaging vs. liquids",
+            "Eliminates guess work and user error",
+            "Biodegradable, sustainable option"
+         ],
+         "specifications": {
+            "Active": "Sodium dichloroisocyanurate (NaDCC) with compatible detergent",
+            "Available Packs": "HDA1233 (3.3g, 1.7g NADCC, 100 tablets), HDA2233 (3.3g, 1.7g NADCC, 200 tablets)",
+            "Certified Against": "BS EN 1650, 13704, 1276, 14476 (Adenovirus/Poliovirus/Enveloped), 14348, 13624, 13727, 13697",
+            "Conforms To": "US CDC and WHO guidelines for isolation, terminal and general environmental disinfection",
+            "Part Numbers": "HDA1233, HDA2233"
+         }
+      },
+      {
+         "id": 13,
+         "slug": "hygrix-dilution-bottles",
+         "image": "/images/products/Hygrix-Dilution-Bottles.png",
+         "quantity": "1L / 4L",
+         "name": "Hygrix Dilution Bottles",
+         "category": "Accessories",
+         "partNumber": "HCG1001 / HCG1004",
+         "shortDescription": "Leak-proof bottles with dilution guides for precise solution preparation.",
+         "description": "Designed for use with Hygrix TAB and Hygrix Dual Action tablets, these dilution bottles are available in 1L and 4L sizes. Visible dilution guides make solution preparation quick, easy and efficient. Leak-proof when closed, reusable bottles include labels and recording logs to track solution strength and preparation date.",
+         "features": [
+            "Visible dilution guides on bottle",
+            "Quick, easy, efficient solution preparation",
+            "Leak-proof design",
+            "Reusable and durable",
+            "Label with recording log included",
+            "Tracks solution strength and date made",
+            "Two size options"
+         ],
+         "specifications": {
+            "Available Sizes": "1L Diluter bottle (HCG1001), 4L Diluter bottle (HCG1004)",
+            "Features": "Leak-proof lid, visible dilution guides, reusable",
+            "Labelling": "Recording log to indicate strength and date prepared",
+            "Compatible With": "Hygrix TAB tablets, Hygrix Dual Action tablets",
+            "Part Numbers": "HCG1001 (1L), HCG1004 (4L)"
          }
       }
    ],
@@ -268,8 +356,7 @@
       "Spill Kits",
       "Disinfectants",
       "Wipes",
-      "Sprays",
-      "Spill Packs"
+      "Accessories"
    ],
    "reviews": [
       {

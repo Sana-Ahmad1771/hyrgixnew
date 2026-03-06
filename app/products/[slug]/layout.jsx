@@ -2,7 +2,7 @@ import data from "../../components/data/data.json";
 
 export async function generateMetadata({ params }) {
   const { slug } = await params;
-  const product = data.products.find(p => p.slug === slug);
+  const product = data.products.find((p) => p.slug === slug);
 
   if (!product) {
     return {
@@ -38,7 +38,10 @@ export async function generateMetadata({ params }) {
     },
     twitter: {
       card: "summary_large_image",
-      title: product.name.length > 60 ? `${product.name.substring(0, 57)}...` : product.name,
+      title:
+        product.name.length > 60
+          ? `${product.name.substring(0, 57)}...`
+          : product.name,
       description,
       images: [product.image || "/twitter-product-default.jpg"],
       creator: "@hygrix",

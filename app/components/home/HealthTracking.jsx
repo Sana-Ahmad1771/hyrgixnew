@@ -1,165 +1,181 @@
-"use client"
+"use client";
 
-import Image from "next/image"
-import Button from "./FeaturesButon"
-import Link from "next/link"
-import { motion } from "motion/react"
+import Image from "next/image";
+import Button from "./FeaturesButon";
+import Link from "next/link";
+import { motion } from "framer-motion";
 
-// Variants
+// --- ANIMATION VARIANTS ---
 const fadeUp = {
-  hidden: { opacity: 0, y: 30 },
-  visible: { 
-    opacity: 1, 
-    y: 0, 
-    transition: { duration: 0.6, ease: "easeOut" } 
+  hidden: { opacity: 0, y: 30, scale: 0.99 },
+  visible: {
+    opacity: 1,
+    y: 0,
+    scale: 1,
+    transition: { duration: 0.8, ease: [0.16, 1, 0.3, 1] },
   },
-}
+};
 
 const staggerContainer = {
-    hidden: { opacity: 0 },
-    visible: {
-        opacity: 1,
-        transition: {
-            staggerChildren: 0.15,
-        },
-    },
-}
+  hidden: {},
+  visible: {
+    transition: { staggerChildren: 0.1 },
+  },
+};
 
 export default function HealthTracking() {
-    return (
-        <section className="flex flex-col gap-15 sm:mx-10 md:mx-20 lg:mx-32 mx-5">
-
-            {/* Heading */}
-            <motion.div
-                className="flex flex-col gap-3 items-center justify-center mt-20"
-                variants={staggerContainer}
-                initial="hidden"
-                whileInView="visible"
-                // once: false ensures it repeats every time you scroll back
-                // amount: 0.2 ensures it triggers early enough on all screens
-                viewport={{ once: false, amount: 0.2 }}>
-                <motion.div variants={fadeUp}>
-                    <Button />
-                </motion.div>
-
-                <motion.h2
-                    variants={fadeUp}
-                    className="text-[#171717] text-center font-aeonik text-3xl sm:text-4xl md:text-4xl font-normal">Hygiene built for high-use environments</motion.h2>
-
-                <motion.p
-                     variants={fadeUp}
-                     className="text-[#171717] text-center text-base font-normal max-w-2xl">From patient wards to factory floors, Hygrix products pair medical-grade efficacy with people-first design, so every dispenser, wipe, and spray is easy to use and tough on pathogens.</motion.p>
+  return (
+    <section className="py-24 lg:py-40">
+      <div className="px-5 sm:px-10 md:px-20 lg:px-32">
+        {/* Editorial Header */}
+        <motion.div
+          className="flex flex-col lg:flex-row justify-between items-end gap-8 mb-20"
+          variants={staggerContainer}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+        >
+          <div className="flex flex-col gap-6 lg:w-2/3">
+            <motion.div variants={fadeUp}>
+              <Button />
             </motion.div>
+            <motion.h2
+              variants={fadeUp}
+              className="text-black font-aeonik text-2xl sm:text-3xl md:text-4xl font-normal"
+            >
+              Hygiene built for <br />
+              high-use environments
+            </motion.h2>
+          </div>
+          <motion.p
+            variants={fadeUp}
+            className="text-black/60 font-poppins text-sm md:text-base max-w-sm leading-relaxed"
+          >
+            Hygrix products pair medical-grade efficacy with people-first
+            design, ensuring durability where it matters most.
+          </motion.p>
+        </motion.div>
 
-            {/* Grid */}
-            <motion.div
-                className="gap-7 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 justify-center"
-                variants={staggerContainer}
-                initial="hidden"
-                whileInView="visible"
-                // once: false allows the grid to re-animate when scrolling back down
-                // amount: 0.1 is critical for mobile so the first items animate as soon as they appear
-                viewport={{ once: false, amount: 0.1 }}>
+        {/* Editorial Grid Layout */}
+        <motion.div
+          className="grid grid-cols-1 md:grid-cols-12 gap-4 lg:gap-6"
+          variants={staggerContainer}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.1 }}
+        >
+          {/* Main Feature Card (Large) */}
+          <motion.div
+            variants={fadeUp}
+            className="md:col-span-8 group relative h-[500px] rounded-[32px] overflow-hidden bg-primary-light p-10 flex flex-col justify-between"
+          >
+            <div className="relative z-10 flex flex-col gap-4">
+              <span className="text-[10px] font-bold uppercase tracking-[0.3em] text-primary/60">
+                01 — Formulation
+              </span>
+              <h3 className="text-black font-aeonik text-3xl md:text-4xl font-normal max-w-md">
+                Hospital-grade formulations
+              </h3>
+            </div>
 
-                {/* Image 1 */}
-                <motion.div
-                    variants={fadeUp}
-                    whileHover={{scale:1.05 }}
-                    className="w-full h-85 mx-auto bg-white rounded-3xl overflow-hidden">
-                    <Image src="/HealthTracking1.png" width={400} height={340} alt="Doctor providing personalized health consultation" className="w-full h-full object-cover" />
-                </motion.div>
+            <div className="relative z-10 flex flex-col md:flex-row items-end justify-between gap-6">
+              <p className="text-black/70 font-poppins text-sm max-w-xs">
+                Alcohol sprays, surface disinfectants, and wipes engineered to
+                meet rigorous medical and industrial safety requirements.
+              </p>
+              <Link
+                href="/products"
+                className="px-8 py-3 bg-white rounded-full text-xs font-semibold shadow-sm hover:bg-black hover:text-white transition-all duration-300"
+              >
+                View SKUs
+              </Link>
+            </div>
 
-                {/* Card 1 */}
-                <motion.div
-                    variants={fadeUp}
-                    whileHover={{scale:1.05 }}
-                    className="w-full h-85 bg-[#FFE4CF] rounded-3xl flex flex-col p-5 justify-between mx-auto">
-                    <h3 className="text-[#171717] font-aeonik text-2xl font-normal">
-                        Hospital-grade formulations
-                    </h3>
-                    <div className="flex flex-col gap-5">
-                        <p className="text-[#171717] font-poppins text-xs font-normal">Alcohol sprays, surface disinfectants, wipes, gloves, and masks engineered to meet healthcare and industrial hygiene requirements.</p>
-                        <Link href="/products" className="underline text-xs">View SKUs</Link>
-                    </div>
-                </motion.div>
+            {/* Image as a background element for the card */}
+            <div className="absolute right-0 top-0 w-1/2 h-full opacity-20 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none">
+              <Image
+                src="/HealthTracking1.png"
+                fill
+                className="object-cover grayscale"
+                alt="Formulation"
+              />
+            </div>
+          </motion.div>
 
-                {/* Image 2 */}
-                <motion.div
-                    variants={fadeUp}
-                    whileHover={{scale:1.05 }}
-                    className="w-full h-85 mx-auto bg-white rounded-3xl overflow-hidden">
-                    <Image src="/HealthTracking2.png" width={400} height={340} alt="Medical professional with stethoscope" className="w-full h-full object-cover" />
-                </motion.div>
+          {/* Secondary Image (Tall) */}
+          <motion.div
+            variants={fadeUp}
+            className="md:col-span-4 h-[500px] rounded-[32px] overflow-hidden relative shadow-lg"
+          >
+            <Image
+              src="/HealthTracking2.png"
+              fill
+              className="object-cover hover:scale-105 transition-transform duration-1000"
+              alt="Med"
+            />
+          </motion.div>
 
-                {/* Card 2 */}
-                <motion.div
-                    variants={fadeUp}
-                    whileHover={{scale:1.05 }}
-                    className="w-full h-85 bg-[#FFE4CF] rounded-3xl flex flex-col p-5 justify-between mx-auto">
-                    <h3 className="text-[#171717] font-aeonik text-2xl font-normal">Ready to ship</h3>
-                    <div className="flex flex-col gap-5">
-                        <p className="text-[#171717] font-poppins text-xs font-normal">Consistent local stock with rapid fulfillment for hospitals, schools, hospitality, and enterprise offices across the GCC.</p>
-                        <Link href="/contactus" className="underline text-xs">Check availability</Link>
-                    </div>
-                </motion.div>
+          {/* Bottom Row - 3 Small Cards */}
 
-                {/* Card 3 */}
-                <motion.div
-                    variants={fadeUp}
-                    whileHover={{scale:1.05 }}
-                    className="w-full h-85 bg-[#FFE4CF] rounded-3xl flex flex-col p-5 justify-between mx-auto"
-                >
-                    <h3 className="text-[#171717] font-aeonik text-2xl font-normal">
-                        Compliance ready
-                    </h3>
-                    <div className="flex flex-col gap-5">
-                        <p className="text-[#171717] font-poppins text-xs font-normal">
-                            Safety data sheets, usage protocols, and training guides included so teams can onboard quickly and stay audit-ready.
-                        </p>
-                        <Link href="/aboutus" className="underline text-xs">
-                            Download docs
-                        </Link>
-                    </div>
-                </motion.div>
+          {/* Compliance Card */}
+          <motion.div
+            variants={fadeUp}
+            className="md:col-span-4 bg-white border border-border rounded-[32px] p-8 h-[320px] flex flex-col justify-between hover:border-black transition-colors group"
+          >
+            <span className="text-[10px] font-bold uppercase tracking-[0.3em] text-primary/60">
+              02 — Logistics
+            </span>
+            <div>
+              <h4 className="font-aeonik text-xl mb-3">Ready to ship</h4>
+              <p className="text-black/50 text-xs leading-relaxed mb-6">
+                Consistent local stock with rapid fulfillment across the GCC.
+              </p>
+              <Link
+                href="/contactus"
+                className="text-xs border-b border-black pb-1 hover:opacity-50 transition-opacity"
+              >
+                Check availability
+              </Link>
+            </div>
+          </motion.div>
 
-                {/* Image 3 */}
-                <motion.div
-                    variants={fadeUp}
-                    whileHover={{scale:1.05 }}
-                    className="w-full h-85 mx-auto bg-white rounded-3xl overflow-hidden"
-                >
-                    <Image src="/HealthTracking3.png" width={400} height={340} alt="Virtual healthcare consultation session" className="w-full h-full object-cover" />
-                </motion.div>
+          {/* Support Card */}
+          <motion.div
+            variants={fadeUp}
+            className="md:col-span-4 bg-white border border-border rounded-[32px] p-8 h-[320px] flex flex-col justify-between hover:border-black transition-colors"
+          >
+            <span className="text-[10px] font-bold uppercase tracking-[0.3em] text-primary/60">
+              03 — Standards
+            </span>
+            <div>
+              <h4 className="font-aeonik text-xl mb-3">Compliance ready</h4>
+              <p className="text-black/50 text-xs leading-relaxed mb-6">
+                SDS, usage protocols, and training guides included for audit
+                readiness.
+              </p>
+              <Link
+                href="/aboutus"
+                className="text-xs border-b border-black pb-1 hover:opacity-50 transition-opacity"
+              >
+                Download docs
+              </Link>
+            </div>
+          </motion.div>
 
-                {/* Card 4 */}
-                <motion.div
-                    variants={fadeUp}
-                    whileHover={{scale:1.05 }}
-                    className="w-full h-85 bg-[#FFE4CF] rounded-3xl flex flex-col p-5 justify-between mx-auto"
-                >
-                    <h3 className="text-[#171717] font-aeonik text-2xl font-normal">
-                        Training & support
-                    </h3>
-                    <div className="flex flex-col gap-5">
-                        <p className="text-[#171717] font-poppins text-xs font-normal">
-                            Hygiene station layout guidance, staff refreshers, and product onboarding led by the Hygrix support team.
-                        </p>
-                        <Link href="/contactus" className="underline text-xs">
-                            Talk to specialists
-                        </Link>
-                    </div>
-                </motion.div>
-
-                {/* Image 4 */}
-                <motion.div
-                    variants={fadeUp}
-                    whileHover={{scale:1.05 }}
-                    className="w-full h-85 mx-auto bg-white rounded-3xl overflow-hidden"
-                >
-                    <Image src="/HealthTracking4.png" width={400} height={340} alt="Health supplements and vitamins" className="w-full h-full object-cover" />
-                </motion.div>
-
-            </motion.div>
-        </section>
-    )
+          {/* Image Card */}
+          <motion.div
+            variants={fadeUp}
+            className="md:col-span-4 h-[320px] rounded-[32px] overflow-hidden relative shadow-md"
+          >
+            <Image
+              src="/HealthTracking3.png"
+              fill
+              className="object-cover grayscale hover:grayscale-0 transition-all duration-700"
+              alt="Training"
+            />
+          </motion.div>
+        </motion.div>
+      </div>
+    </section>
+  );
 }

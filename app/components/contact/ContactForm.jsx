@@ -1,209 +1,268 @@
-"use client"
-import Image from "next/image"
-import { motion } from "motion/react"
+"use client";
 
+import { useRef } from "react";
+import Image from "next/image";
+import { motion, useScroll, useTransform } from "framer-motion";
+import { ArrowRight } from "lucide-react";
+import Link from "next/link";
+
+// --- ANIMATION VARIANTS ---
 const fadeUp = {
-    hidden: { opacity: 0, y: 30, scale: 0.97 },
-    visible: {
-        opacity: 1,
-        y: 0,
-        scale: 1,
-        transition: { duration: 0.6, ease: "easeOut" },
-    },
-}
+  hidden: { opacity: 0, y: 30, scale: 0.98 },
+  visible: {
+    opacity: 1,
+    y: 0,
+    scale: 1,
+    transition: { duration: 0.8, ease: [0.16, 1, 0.3, 1] },
+  },
+};
 
 const staggerContainer = {
-    hidden: {},
-    visible: {
-        transition: {
-            staggerChildren: 0.15,
-            delayChildren: 0.1,
-        },
-    },
-}
-
+  hidden: {},
+  visible: { transition: { staggerChildren: 0.1 } },
+};
 
 export default function Hero() {
-    return (
-        <>
-            {/* Hero Section - 100vh with centered text */}
-            <section className="bg-[#FCF2E5] min-h-screen relative overflow-hidden">
-                {/* Decorative orange circles */}
-                <motion.div 
-                    className="absolute bottom-50 md:bottom-30 lg:bottom-50 left-10 md:left-40"
-                    initial={{ opacity: 0, scale: 0, rotate: -180 }}
-                    animate={{ opacity: 1, scale: 1, rotate: 0 }}
-                    transition={{ duration: 1, ease: "easeOut" }}
-                >
-                    <motion.div
-                        animate={{ 
-                            y: [0, -15, 0],
-                            rotate: [0, 5, 0]
-                        }}
-                        transition={{ 
-                            duration: 4, 
-                            repeat: Infinity, 
-                            ease: "easeInOut" 
-                        }}>
-                        <Image src="/herobg.png" alt="Decoration" width={150} height={150} className="w-25 md:w-37.5 object-contain" />
-                    </motion.div>
-                </motion.div>
+  const containerRef = useRef(null);
+  const { scrollYProgress } = useScroll({
+    target: containerRef,
+    offset: ["start start", "end start"],
+  });
 
-                {/* Center Content - Text in middle of viewport */}
-                <motion.div 
-                    className="flex items-center justify-center h-[calc(100vh-350px)]"
-                    initial={{ opacity: 0 }}
-                    animate={{ opacity: 1 }}
-                    transition={{ duration: 1, delay: 0.3 }}
-                >
-                    <motion.h1 
-                        className="text-[#171717] text-center font-Aeonik text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-normal px-4 leading-tight"
-                        initial={{ opacity: 0, y: 50, scale: 0.9 }}
-                        animate={{ opacity: 1, y: 0, scale: 1 }}
-                        transition={{ duration: 0.9, delay: 0.5, ease: [0.25, 0.46, 0.45, 0.94] }}
-                    >
-                        Healthcare, Simplified <br /> You Can Focus on Living.
-                    </motion.h1>
-                </motion.div>
-            </section>
+  // Parallax effects for the hero text and floating elements
+  const textY = useTransform(scrollYProgress, [0, 1], [0, 150]);
+  const bgScale = useTransform(scrollYProgress, [0, 1], [1, 1.1]);
 
-            {/* Contact Form Section */}
-            <div className="max-w-full sm:mx-10 md:mx-20 lg:mx-32 mx-5 -mt-57.5 md:-mt-50 lg:-mt-62.5 px-0 flex flex-col relative z-10">
-                <motion.div 
-                    className="bg-white rounded-2xl p-6 md:p-10 flex flex-col gap-10 lg:gap-0 lg:flex-row items-start justify-between shadow-lg border border-[#d5eee2]"
-                    initial={{ opacity: 0, y: 80, scale: 0.95 }}
-                    whileInView={{ opacity: 1, y: 0, scale: 1 }}
-                    viewport={{ once: false, amount: 0.1 }}
-                    transition={{ duration: 0.8, ease: [0.25, 0.46, 0.45, 0.94] }}
-                >
-                    {/* Left: Form */}
-                    <motion.div 
-                        className="p-2 w-full lg:w-1/2"
-                        initial={{ opacity: 0, x: -50 }}
-                        whileInView={{ opacity: 1, x: 0 }}
-                        viewport={{ once: false }}
-                        transition={{ duration: 0.7, delay: 0.2 }}
-                    >
-                        <motion.h2 
-                            className="font-aeonik font-normal text-3xl md:text-4xl leading-none tracking-tight"
-                            initial={{ opacity: 0, y: 20 }}
-                            whileInView={{ opacity: 1, y: 0 }}
-                            viewport={{ once: false }}
-                            transition={{ duration: 0.5, delay: 0.3 }}
-                        >
-                            Contact Us
-                        </motion.h2>
-                        <motion.p 
-                            className="font-aeonik font-normal text-sm md:text-base leading-relaxed mt-4 text-gray-500 max-w-md "
-                            initial={{ opacity: 0, y: 20 }}
-                            whileInView={{ opacity: 1, y: 0 }}
-                            viewport={{ once: false }}
-                            transition={{ duration: 0.5, delay: 0.4 }}
-                        >
-                            Tell us about your facility, headcount, and hygiene checkpoints. The Hygrix team will recommend SKUs, share compliance docs, and confirm delivery timelines.
-                        </motion.p>
+  return (
+    <>
+      {/* --- HERO SECTION --- */}
+      <section
+        ref={containerRef}
+        className="bg-secondary-light h-[80vh] lg:h-screen xl:-mt-30 xl:mb-5 relative overflow-hidden flex items-center justify-center"
+      >
+        {/* Decorative Floating Elements */}
+        <motion.div
+          style={{ scale: bgScale }}
+          className="absolute inset-0 pointer-events-none"
+        >
+          <motion.div
+            className="absolute top-20 left-[10%] opacity-40 blur-3xl w-64 h-64 bg-primary/20 rounded-full"
+            animate={{ x: [0, 30, 0], y: [0, -30, 0] }}
+            transition={{ duration: 8, repeat: Infinity, ease: "easeInOut" }}
+          />
+          <motion.div
+            className="absolute bottom-40 right-[15%]"
+            initial={{ opacity: 0, scale: 0.8 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 1.2 }}
+          >
+            <Image
+              src="/herobg.png"
+              alt="Decoration"
+              width={180}
+              height={180}
+              className="w-32 md:w-48 object-contain opacity-80 rotate-12"
+            />
+          </motion.div>
+        </motion.div>
 
-                        <motion.form 
-                            className="mt-10 space-y-6"
-                            variants={staggerContainer}
-                            initial="hidden"
-                            whileInView="visible"
-                            viewport={{ once: false, amount: 0.3 }}
-                        >
-                            <motion.div className="flex flex-col gap-1" variants={fadeUp}>
-                                <label className="font-poppins font-medium text-sm text-gray-800">Full Name</label>
-                                <input type="text" placeholder="John Doe" className="w-full border-b border-gray-300 focus:border-black outline-none py-2 transition-colors placeholder:text-gray-300 bg-transparent" />
-                            </motion.div>
+        {/* Center Headline */}
+        <motion.div
+          style={{ y: textY }}
+          className="relative z-10 text-center px-6"
+        >
+          <motion.div
+            initial={{ opacity: 0, scale: 0.9 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 1, ease: "easeOut" }}
+          >
+            <span className="text-primary font-bold tracking-[0.3em] text-[10px] md:text-xs uppercase mb-6 block">
+              Redefining Care Delivery
+            </span>
+            <h1 className="text-black font-aeonik text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-normal leading-tight mb-6">
+              Healthcare, Simplified <br /> You Can Focus on Living.
+            </h1>
+          </motion.div>
+        </motion.div>
+      </section>
 
-                            <motion.div className="flex flex-col gap-1" variants={fadeUp}>
-                                <label className="font-poppins font-medium text-sm text-gray-800">Company Name</label>
-                                <input type="text" placeholder="Enter your company name" className="w-full border-b border-gray-300 focus:border-black outline-none py-2 transition-colors placeholder:text-gray-300 bg-transparent" />
-                            </motion.div>
-
-                            <motion.div className="flex flex-col gap-1" variants={fadeUp}>
-                                <label className="font-poppins font-medium text-sm text-gray-800">Email</label>
-                                <input type="email" placeholder="Enter your email" className="w-full border-b border-gray-300 focus:border-black outline-none py-2 transition-colors placeholder:text-gray-300 bg-transparent" />
-                            </motion.div>
-
-                            <motion.div className="flex flex-col gap-1" variants={fadeUp}>
-                                <label className="font-poppins font-medium text-sm text-gray-800">Your Message</label>
-                                <textarea placeholder="Enter your message" rows="1" className="w-full border-b border-gray-300 focus:border-black outline-none py-2 resize-none transition-colors placeholder:text-gray-300 bg-transparent" />
-                            </motion.div>
-
-                            <motion.div 
-                                className="pt-4"
-                                variants={fadeUp}
-                                whileHover={{ scale: 1.02 }}
-                                whileTap={{ scale: 0.98 }}
-                            >
-                                <button type="button" className="bg-black text-white px-8 py-3 rounded-full text-sm font-semibold hover:bg-gray-800 transition-all">
-                                    Submit inquiry
-                                </button>
-                            </motion.div>
-                        </motion.form>
-                    </motion.div>
-
-                    {/* Right: Floating Image Collage */}
-                    <motion.div  
-                        className="hidden lg:block relative lg:mt-25 h-125 w-100 lg:w-112.5"
-                        variants={staggerContainer}
-                        initial="hidden"
-                        whileInView="visible"
-                        viewport={{ once: false, amount: 0.3 }}
-                    >
-                        {/* Top left - Doctor/Stethoscope */}
-                        <motion.div
-                            variants={fadeUp}
-                            whileHover={{ scale: 1.05, y: -5 }}
-                            transition={{ type: "spring", stiffness: 300 }}
-                            className="absolute top-0 left-17"
-                        >
-                            <Image src="/HealthTracking2.png" width={180} height={170} className="h-42.5 w-45 rounded-xl object-cover shadow-lg" alt="Medical professional" />
-                        </motion.div>
-
-                        {/* Top right - Pills */}
-                        <motion.div
-                            variants={fadeUp}
-                            whileHover={{ scale: 1.05, y: -5 }}
-                            transition={{ type: "spring", stiffness: 300 }}
-                            className="absolute top-5 right-7"
-                        >
-                            <Image src="/HealthTracking4.png" width={110} height={110} className="h-27.5 w-27.5 rounded-xl object-cover shadow-lg" alt="Supplements" />
-                        </motion.div>
-
-                        {/* Middle left small */}
-                        <motion.div
-                            variants={fadeUp}
-                            whileHover={{ scale: 1.05, y: -5 }}
-                            transition={{ type: "spring", stiffness: 300 }}
-                            className="absolute top-60 left-15"
-                        >
-                            <Image src="/HealthTracking3.png" width={80} height={80} className="h-20 w-20 rounded-xl object-cover shadow-lg" alt="Consultation" />
-                        </motion.div>
-
-                        {/* Middle right - larger image */}
-                        <motion.div
-                            variants={fadeUp}
-                            whileHover={{ scale: 1.05, y: -5 }}
-                            transition={{ type: "spring", stiffness: 300 }}
-                            className="absolute top-42.5 right-5"
-                        >
-                            <Image src="/HealthTracking4.png" width={180} height={160} className="h-40 w-45 rounded-xl object-cover shadow-lg" alt="Fitness" />
-                        </motion.div>
-
-                        {/* Bottom center */}
-                        <motion.div
-                            variants={fadeUp}
-                            whileHover={{ scale: 1.05, y: -5 }}
-                            transition={{ type: "spring", stiffness: 300 }}
-                            className="absolute bottom-8 left-27.5"
-                        >
-                            <Image src="/HealthTracking2.png" width={140} height={140} className="w-35 h-35 rounded-xl object-cover shadow-lg" alt="Supplements" />
-                        </motion.div>
-                    </motion.div>
-
-                </motion.div>
+      {/* --- CONTACT FORM SECTION --- */}
+      <div className=" px-5 sm:px-10 md:px-20 lg:px-32 relative z-20 -mt-32 md:-mt-48">
+        <motion.div
+          className="bg-white/80 backdrop-blur-2xl rounded-[40px] p-8 md:p-16 flex flex-col lg:flex-row gap-16 items-center shadow-[0_32px_64px_-16px_rgba(0,0,0,0.1)] border border-white"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.1 }}
+          variants={fadeUp}
+        >
+          {/* Left: Interactive Form */}
+          <div className="w-full lg:w-1/2 space-y-10">
+            <div className="space-y-4">
+              <h2 className="text-black font-aeonik text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-normal leading-tight mb-6">
+                Get in touch
+              </h2>
+              <p className="font-poppins text-gray-500 max-w-md leading-relaxed">
+                Tell us about your facility. Our experts will recommend the
+                perfect hygiene protocols and SKUs for your team.
+              </p>
             </div>
-        </>
-    )
+
+            <form className="space-y-8">
+              {[
+                { label: "Full Name", placeholder: "John Doe", type: "text" },
+                {
+                  label: "Email Address",
+                  placeholder: "john@facility.com",
+                  type: "email",
+                },
+                {
+                  label: "Company",
+                  placeholder: "Healthcare Center Inc.",
+                  type: "text",
+                },
+              ].map((field, i) => (
+                <motion.div
+                  key={i}
+                  className="group relative"
+                  variants={fadeUp}
+                >
+                  <label className="text-[10px] uppercase tracking-widest font-bold text-primary mb-2 block">
+                    {field.label}
+                  </label>
+                  <input
+                    type={field.type}
+                    placeholder={field.placeholder}
+                    className="w-full bg-transparent border-b-2 border-gray-100 py-3 outline-none focus:border-primary transition-all duration-500 placeholder:text-gray-300 text-lg"
+                  />
+                </motion.div>
+              ))}
+
+              <motion.div className="group relative" variants={fadeUp}>
+                <label className="text-[10px] uppercase tracking-widest font-bold text-primary mb-2 block">
+                  How can we help?
+                </label>
+                <textarea
+                  placeholder="Describe your hygiene requirements..."
+                  rows="2"
+                  className="w-full bg-transparent border-b-2 border-gray-100 py-3 outline-none focus:border-primary transition-all duration-500 resize-none placeholder:text-gray-300 text-lg"
+                />
+              </motion.div>
+
+              {/* <motion.button
+                whileHover={{ scale: 1.02 }}
+                whileTap={{ scale: 0.98 }}
+                className="bg-black text-white px-10 py-5 rounded-full font-bold text-sm tracking-wide shadow-xl hover:shadow-primary/20 transition-all flex items-center gap-3"
+              >
+                Send Message
+                <span className="w-2 h-2 bg-primary rounded-full animate-pulse" />
+              </motion.button> */}
+
+              {/* --- EXPANDING BUTTON --- */}
+              <motion.div
+                initial="initial"
+                whileHover="hover"
+                animate="initial"
+                className="relative inline-block"
+              >
+                <div className="relative cursor-pointer flex items-center bg-white h-[48px] md:h-[56px] pl-[4px] md:pl-[6px] pr-6 md:pr-8 rounded-full overflow-hidden shadow-lg border border-black/5">
+                  {/* The Orange Circle: Scales based on parent height */}
+                  <motion.div
+                    className="absolute left-[4px] md:left-[6px] h-[40px] md:h-[44px] bg-primary rounded-full z-0"
+                    variants={{
+                      initial: { width: 40, md: 44 }, // Adjust initial width for mobile
+                      hover: { width: "calc(100% - 8px)" }, // Fills almost entire button on hover
+                    }}
+                    transition={{ type: "spring", stiffness: 200, damping: 25 }}
+                  />
+
+                  {/* Icon container: Responsive size */}
+                  <div className="relative z-10 w-[40px] md:w-[44px] h-[40px] md:h-[44px] flex items-center justify-center overflow-hidden">
+                    <motion.div
+                      variants={{ initial: { x: 0 }, hover: { x: 40 } }}
+                      transition={{ duration: 0.4, ease: "easeInOut" }}
+                    >
+                      <ArrowRight className="w-4 h-4 md:w-5 md:h-5 text-white" />
+                    </motion.div>
+                    <motion.div
+                      className="absolute"
+                      variants={{ initial: { x: -40 }, hover: { x: 0 } }}
+                      transition={{ duration: 0.4, ease: "easeInOut" }}
+                    >
+                      <ArrowRight className="w-4 h-4 md:w-5 md:h-5 text-white" />
+                    </motion.div>
+                  </div>
+
+                  {/* Text container: Adjusted height for mobile font scaling */}
+                  <div className="relative z-10 ml-2 md:ml-3 h-[18px] md:h-[20px] overflow-hidden">
+                    <motion.div
+                      className="flex flex-col"
+                      variants={{
+                        initial: { y: 0 },
+                        hover: { y: -20 }, // Ensure this matches the md:h-[20px]
+                      }}
+                      transition={{ duration: 0.4, ease: "easeInOut" }}
+                    >
+                      {/* First Span: Visible by default */}
+                      <span className="h-[18px] md:h-[20px] flex items-center text-black text-xs md:text-sm font-bold whitespace-nowrap">
+                        Send Message
+                      </span>
+
+                      {/* Second Span: Visible on hover */}
+                      <span className="h-[18px] md:h-[20px] flex items-center text-white text-xs md:text-sm font-bold whitespace-nowrap">
+                        Send Message
+                      </span>
+                    </motion.div>
+                  </div>
+                </div>
+              </motion.div>
+            </form>
+          </div>
+
+          {/* Right: Modern Image Grid (Asymmetrical Bento) */}
+          <div className="hidden lg:grid grid-cols-2 gap-4 w-full lg:w-1/2">
+            <motion.div variants={fadeUp} className="space-y-4 pt-12">
+              <div className="rounded-3xl overflow-hidden shadow-2xl">
+                <Image
+                  src="/HealthTracking2.png"
+                  width={300}
+                  height={400}
+                  className="hover:scale-110 transition-transform duration-700 h-64 object-cover"
+                  alt="Med"
+                />
+              </div>
+              <div className="rounded-3xl overflow-hidden shadow-2xl ml-8">
+                <Image
+                  src="/HealthTracking3.png"
+                  width={200}
+                  height={200}
+                  className="hover:scale-110 transition-transform duration-700 h-40 w-full object-cover"
+                  alt="Med"
+                />
+              </div>
+            </motion.div>
+            <motion.div variants={fadeUp} className="space-y-4">
+              <div className="rounded-3xl overflow-hidden shadow-2xl">
+                <Image
+                  src="/HealthTracking4.png"
+                  width={250}
+                  height={250}
+                  className="hover:scale-110 transition-transform duration-700 h-56 w-full object-cover"
+                  alt="Med"
+                />
+              </div>
+              <div className="rounded-3xl overflow-hidden shadow-2xl">
+                <Image
+                  src="/HealthTracking2.png"
+                  width={300}
+                  height={300}
+                  className="hover:scale-110 transition-transform duration-700 h-72 object-cover"
+                  alt="Med"
+                />
+              </div>
+            </motion.div>
+          </div>
+        </motion.div>
+      </div>
+    </>
+  );
 }
