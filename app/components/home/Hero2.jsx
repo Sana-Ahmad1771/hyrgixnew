@@ -100,7 +100,7 @@ export default function Hero2() {
                 deploy across the UAE and GCC.
               </p>
 
-              {/* --- EXPANDING BUTTON --- */}
+              {/* EXPANDING BUTTON */}
               <motion.div
                 initial="initial"
                 whileHover="hover"

@@ -137,7 +137,7 @@ export default function Journey() {
               </div>
             </Link>
           </motion.div>
-          {/* <motion.div
+          <motion.div
             className="flex items-center justify-center w-32 sm:w-34 md:w-36 h-10 sm:h-10.5 md:h-11 rounded-full bg-black shadow-[-13px_22px_12.8px_0_rgba(255,255,255,0.25)] cursor-pointer hover:bg-gray-900 transition-all duration-300"
             variants={fadeUp}
             whileHover={{ scale: 1.05, y: -2 }}
@@ -146,7 +146,7 @@ export default function Journey() {
             <span className="text-white font-medium text-xs sm:text-sm md:text-base transition-all duration-300">
               Plan my rollout
             </span>
-          </motion.div> */}
+          </motion.div>
         </motion.div>
       </motion.div>
     </section>
